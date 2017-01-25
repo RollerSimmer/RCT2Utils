@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\ParkDat.Application = ParkDat Application
+HKEY_CLASSES_ROOT\ParkDat.Application\CLSID = {D6004899-7FD4-492D-9D5C-1DE19FDB9E8A}
+
+HKEY_CLASSES_ROOT\CLSID\{D6004899-7FD4-492D-9D5C-1DE19FDB9E8A} = ParkDat Application
+HKEY_CLASSES_ROOT\CLSID\{D6004899-7FD4-492D-9D5C-1DE19FDB9E8A}\ProgId = ParkDat.Application
+HKEY_CLASSES_ROOT\CLSID\{D6004899-7FD4-492D-9D5C-1DE19FDB9E8A}\LocalServer32 = PARKDAT.EXE

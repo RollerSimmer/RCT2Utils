@@ -1,0 +1,5 @@
+LIBRARY 8carsfunc
+ 
+EXPORTS 
+	RCT2KeyInterceptProc
+	Set8carsDllLocals

@@ -1,0 +1,42 @@
+// RCT2Landmark_LScen.odl : type library source for RCT2Landmark_LScen.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (RCT2Landmark_LScen.tlb).
+
+[ uuid(AAC12EA2-7980-455D-98F3-B1A0316BB6BD), version(1.0) ]
+library RCT2Landmark_LScen
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CRCT2Landmark_LScenDoc
+	
+	[ uuid(AC077A33-2B08-4081-A1EA-27B21DFD6BB5) ]
+	dispinterface IRCT2Landmark_LScen
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRCT2Landmark_LScenDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRCT2Landmark_LScenDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CRCT2Landmark_LScenDoc
+	
+	[ uuid(AE238DB8-F57C-447B-B284-1894234CE28E) ]
+	coclass RCT2Landmark_LScen
+	{
+		[default] dispinterface IRCT2Landmark_LScen;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

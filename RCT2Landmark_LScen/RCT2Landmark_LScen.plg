@@ -1,0 +1,172 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RCT2Landmark_LScen - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+/nologo /Zp1 /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\games\rct2 files\utils\RCT2Landmark_LScen\parse\Parse_Input.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPF1.tmp" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPF2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RCT2Landmark_LScen.pdb" /debug /machine:I386 /force /out:"Debug/RCT2Landmark_LScen.exe" /pdbtype:sept 
+".\Debug\Parse_Input.obj"
+".\Debug\Parse_Output.obj"
+".\Debug\bitmap_compile.obj"
+".\Debug\bitmap_extract.obj"
+".\Debug\DlgProxy.obj"
+".\Debug\RCT2Landmark_LScen.obj"
+".\Debug\RCT2Landmark_LScenDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\superString.obj"
+".\Debug\RCT2Landmark_LScen.res"
+"C:\Files\vc2\vcLib\lib\prompt.lib"
+"C:\Files\vc2\vcLib\lib\FileIO2.lib"
+"..\..\..\..\Programming\libs\libs\mem3.lib"
+"C:\Files\vc2\vcLib\lib\BMPLib.lib"
+"..\..\..\..\Programming\libs\libs\img256_lib.lib"
+"C:\Files\vc1\vclibs\libs\stdlib2.lib"
+"..\..\..\..\Programming\libs\libs\superString.lib"
+"..\..\rct2Lib\rct2Lib___Win32_Debug_System32\rct2Lib.lib"
+]
+Creating command line "link.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPF2.tmp"
+<h3>Output Window</h3>
+Compiling...
+Parse_Input.cpp
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in Parse_Input.obj; second definition ignored
+Parse_Output.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "bool __cdecl operator!=(struct tagRECT,struct tagRECT)" (??9@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "bool __cdecl operator==(struct tagRECT,struct tagRECT)" (??8@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "bool __cdecl operator!=(struct BGR_24BIT,struct BGR_24BIT)" (??9@YA_NUBGR_24BIT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "bool __cdecl operator==(struct tagRGBQUAD,struct tagRGBQUAD)" (??8@YA_NUtagRGBQUAD@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in Parse_Input.obj; second definition ignored
+bitmap_compile.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "bool __cdecl operator!=(struct tagRECT,struct tagRECT)" (??9@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "bool __cdecl operator==(struct tagRECT,struct tagRECT)" (??8@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "bool __cdecl operator!=(struct BGR_24BIT,struct BGR_24BIT)" (??9@YA_NUBGR_24BIT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "bool __cdecl operator==(struct tagRGBQUAD,struct tagRGBQUAD)" (??8@YA_NUtagRGBQUAD@@0@Z) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in Parse_Input.obj; second definition ignored
+bitmap_extract.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "bool __cdecl operator!=(struct tagRECT,struct tagRECT)" (??9@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "bool __cdecl operator==(struct tagRECT,struct tagRECT)" (??8@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "bool __cdecl operator!=(struct BGR_24BIT,struct BGR_24BIT)" (??9@YA_NUBGR_24BIT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "bool __cdecl operator==(struct tagRGBQUAD,struct tagRGBQUAD)" (??8@YA_NUtagRGBQUAD@@0@Z) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in Parse_Input.obj; second definition ignored
+RCT2Landmark_LScenDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in Parse_Input.obj; second definition ignored
+BMPLib.lib(BMPLib.obj) : warning LNK4006: "bool __cdecl operator!=(struct tagRECT,struct tagRECT)" (??9@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+BMPLib.lib(BMPLib.obj) : warning LNK4006: "bool __cdecl operator==(struct tagRECT,struct tagRECT)" (??8@YA_NUtagRECT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+BMPLib.lib(BMPLib.obj) : warning LNK4006: "bool __cdecl operator!=(struct BGR_24BIT,struct BGR_24BIT)" (??9@YA_NUBGR_24BIT@@0@Z) already defined in Parse_Input.obj; second definition ignored
+BMPLib.lib(BMPLib.obj) : warning LNK4006: "bool __cdecl operator==(struct tagRGBQUAD,struct tagRGBQUAD)" (??8@YA_NUtagRGBQUAD@@0@Z) already defined in Parse_Input.obj; second definition ignored
+LINK : warning LNK4098: defaultlib "LIBCD" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCMTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+Debug/RCT2Landmark_LScen.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPF4.tmp" with contents
+[
+/nologo /o"Debug/RCT2Landmark_LScen.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Parse_Input.sbr"
+".\Debug\Parse_Output.sbr"
+".\Debug\bitmap_compile.sbr"
+".\Debug\bitmap_extract.sbr"
+".\Debug\DlgProxy.sbr"
+".\Debug\RCT2Landmark_LScen.sbr"
+".\Debug\RCT2Landmark_LScenDlg.sbr"
+".\Debug\superString.sbr"]
+Creating command line "bscmake.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPF4.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+RCT2Landmark_LScen.exe - 0 error(s), 108 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SC426_TEST - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPEE.tmp" with contents
+[
+/nologo /Zp1 /MLd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\games\rct2 files\utils\sc426_test\426\rideConvert.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPEE.tmp" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPEF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SC426_TEST.pdb" /debug /machine:I386 /force /out:"Debug/SC426_TEST.exe" /pdbtype:sept /W0 
+".\Debug\426_OBJDAT.obj"
+".\Debug\426_ride_trackVehiConvert.obj"
+".\Debug\colorConvert.obj"
+".\Debug\ConvertParkData.obj"
+".\Debug\mapConvert.obj"
+".\Debug\rideConvert.obj"
+".\Debug\trackElementConvert.obj"
+".\Debug\SC426_TEST.obj"
+".\Debug\StdAfx.obj"
+"..\..\rct2Lib\rct2Lib___Win32_Debug_System32\rct2Lib.lib"
+"..\..\..\rct files\dll\rct1lib\Debug\rct1lib.lib"
+"C:\Files\vc2\vcLib\lib\prompt.lib"
+"C:\Files\vc2\vcLib\lib\FileIO2.lib"
+"C:\Files\vc1\vclibs\libs\stdlib2.lib"
+]
+Creating command line "link.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPEF.tmp"
+<h3>Output Window</h3>
+Compiling...
+rideConvert.cpp
+Linking...
+LINK : warning LNK4044: unrecognized option "W0"; ignored
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in 426_OBJDAT.obj; second definition ignored
+ConvertParkData.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "short __cdecl Rct1ColorConvert(short)" (?Rct1ColorConvert@@YAFF@Z) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "int __cdecl Rct1to2ColorMap(unsigned char &,short,short)" (?Rct1to2ColorMap@@YAHAAEFF@Z) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_PATH_RCT1_TO_RCT2_MAPSTRUCT *  pathConvertTable" (?pathConvertTable@@3PAUSV6_PATH_RCT1_TO_RCT2_MAPSTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "short __cdecl rct1shopTrack_MapTable_indexConvert(int)" (?rct1shopTrack_MapTable_indexConvert@@YAFH@Z) already defined in 426_ride_trackVehiConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "short __cdecl GetMiniCoasterTrack(short)" (?GetMiniCoasterTrack@@YAFF@Z) already defined in 426_ride_trackVehiConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "short __cdecl Rct1ColorConvert(short)" (?Rct1ColorConvert@@YAFF@Z) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "int __cdecl Rct1to2ColorMap(unsigned char &,short,short)" (?Rct1to2ColorMap@@YAHAAEFF@Z) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "short *  rct1shop_trackIDTable" (?rct1shop_trackIDTable@@3PAFA) already defined in 426_ride_trackVehiConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct RCT1_TRACK_TYPE_CONVERT_TABLE *  rct1TrackTypeConvertTable" (?rct1TrackTypeConvertTable@@3PAURCT1_TRACK_TYPE_CONVERT_TABLE@@A) already defined in 426_ride_trackVehiConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "short *  rct1shopTrack_MapTable" (?rct1shopTrack_MapTable@@3PAFA) already defined in 426_ride_trackVehiConvert.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+rideConvert.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in ConvertParkData.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT1to2trackElementConversionTable" (?RCT1to2trackElementConversionTable@@3PAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in 426_OBJDAT.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "short __cdecl Rct1ColorConvert(short)" (?Rct1ColorConvert@@YAFF@Z) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "int __cdecl Rct1to2ColorMap(unsigned char &,short,short)" (?Rct1to2ColorMap@@YAHAAEFF@Z) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in ConvertParkData.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in 426_OBJDAT.obj; second definition ignored
+SC426_TEST.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in ConvertParkData.obj; second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _sprintf already defined in LIBCD.lib(sprintf.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _strncpy already defined in LIBCD.lib(strncpy.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __close already defined in LIBCD.lib(close.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __lseek already defined in LIBCD.lib(lseek.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __write already defined in LIBCD.lib(write.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _memmove already defined in LIBCD.lib(memmove.obj); second definition ignored
+LINK : warning LNK4098: defaultlib "MSVCRTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+Debug/SC426_TEST.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+/nologo /o"Debug/SC426_TEST.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\426_OBJDAT.sbr"
+".\Debug\426_ride_trackVehiConvert.sbr"
+".\Debug\colorConvert.sbr"
+".\Debug\ConvertParkData.sbr"
+".\Debug\mapConvert.sbr"
+".\Debug\rideConvert.sbr"
+".\Debug\trackElementConvert.sbr"
+".\Debug\SC426_TEST.sbr"]
+Creating command line "bscmake.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPF1.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SC426_TEST.exe - 0 error(s), 184 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+[infoHeader]
+
+-- datName
+"JASAGS02";
+-- tileDim
+{3,3};
+-- remaps
+{on,on};
+-- cursorSel
+10;
+-- buildFee
+1;
+-- removeFee
+-1;
+-- landmark
+on;
+
+[names]
+
+-- String #00 - english_UK
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #01 - english_USA
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #02 - francais
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #03 - deutsch
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #04 - espanol
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #05 - italiano
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #06 - nederlands
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #07 - sverige
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #08 - korean
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #09 - chinese
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #10 - chinese2
+"Parkitect => Sagalax => Large Spaceship 02";
+-- String #11 - portugese
+"Parkitect => Sagalax => Large Spaceship 02";
+
+[pos]
+
+{
+-- {col,row,baseHeight,clearance,hasSupports,quads,walls}
+-- tile #0
+{0,0,0,5,off,{off,off,off,off},{on,on,on,on}},
+-- tile #1
+{1,0,0,5,off,{on,on,on,on},{on,off,off,off}},
+-- tile #2
+{2,0,0,5,off,{off,off,off,off},{on,on,on,on}},
+-- tile #3
+{0,1,0,5,off,{on,on,on,on},{off,off,off,on}},
+-- tile #4
+{1,1,0,10,off,{on,on,on,on},{off,off,off,off}},
+-- tile #5
+{2,1,0,5,off,{on,on,on,on},{off,on,off,off}},
+-- tile #6
+{0,2,0,5,off,{on,off,on,on},{off,on,on,on}},
+-- tile #7
+{1,2,0,10,off,{on,on,on,on},{off,on,on,on}},
+-- tile #8
+{2,2,0,5,off,{on,on,off,on},{off,on,on,on}},
+};
+
+[Images_Full]
+
+0;
+-- remap1 & remap2: {grey,grey,gold,tan,yellow,brickRed,pukeGreen,oliveGreen,limeGreen,peach,indigo,blue,seaFoamGreen,purple,red,orange,teal,pink,rustBrown,remap1}
+{off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,on};
+{off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,on,off,off};
+-- menu images
+"menuSE.bmp";
+"menuNE.bmp";
+"menuNW.bmp";
+"menuSW.bmp";
+-- full views
+"viewSE.bmp";
+"viewNE.bmp";
+"viewNW.bmp";
+"viewSW.bmp";
+
+[Images_Tile]
+
+0;
+-- remap1 & remap2: {grey,grey,gold,tan,yellow,brickRed,pukeGreen,oliveGreen,limeGreen,peach,indigo,blue,seaFoamGreen,purple,red,orange,teal,pink,rustBrown,remap1}
+{off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,on};
+{off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,on,off,off};
+-- tileImages: {xOfs,yOfs,bitmapName}
+{
+-- Tile #0, View SW
+{-48,0,"Tl0000SW.bmp"},
+-- Tile #0, View SE
+{-48,0,"Tl0000SE.bmp"},
+-- Tile #0, View NE
+{-48,0,"Tl0000NE.bmp"},
+-- Tile #0, View NW
+{-48,0,"Tl0000NW.bmp"},
+-- Tile #1, View SW
+{-32,-40,"Tl0001SW.bmp"},
+-- Tile #1, View SE
+{-32,-40,"Tl0001SE.bmp"},
+-- Tile #1, View NE
+{-32,-40,"Tl0001NE.bmp"},
+-- Tile #1, View NW
+{-32,-40,"Tl0001NW.bmp"},
+-- Tile #2, View SW
+{-32,-40,"Tl0002SW.bmp"},
+-- Tile #2, View SE
+{-32,-40,"Tl0002SE.bmp"},
+-- Tile #2, View NE
+{-32,-40,"Tl0002NE.bmp"},
+-- Tile #2, View NW
+{-32,-40,"Tl0002NW.bmp"},
+-- Tile #3, View SW
+{-32,-40,"Tl0003SW.bmp"},
+-- Tile #3, View SE
+{-32,-40,"Tl0003SE.bmp"},
+-- Tile #3, View NE
+{-32,-40,"Tl0003NE.bmp"},
+-- Tile #3, View NW
+{-32,-40,"Tl0003NW.bmp"},
+-- Tile #4, View SW
+{-32,-40,"Tl0004SW.bmp"},
+-- Tile #4, View SE
+{-32,-40,"Tl0004SE.bmp"},
+-- Tile #4, View NE
+{-32,-40,"Tl0004NE.bmp"},
+-- Tile #4, View NW
+{-32,-40,"Tl0004NW.bmp"},
+-- Tile #5, View SW
+{-32,-80,"Tl0005SW.bmp"},
+-- Tile #5, View SE
+{-32,-80,"Tl0005SE.bmp"},
+-- Tile #5, View NE
+{-32,-80,"Tl0005NE.bmp"},
+-- Tile #5, View NW
+{-32,-80,"Tl0005NW.bmp"},
+-- Tile #6, View SW
+{-32,-40,"Tl0006SW.bmp"},
+-- Tile #6, View SE
+{-32,-40,"Tl0006SE.bmp"},
+-- Tile #6, View NE
+{-32,-40,"Tl0006NE.bmp"},
+-- Tile #6, View NW
+{-32,-40,"Tl0006NW.bmp"},
+-- Tile #7, View SW
+{-32,-40,"Tl0007SW.bmp"},
+-- Tile #7, View SE
+{-32,-40,"Tl0007SE.bmp"},
+-- Tile #7, View NE
+{-32,-40,"Tl0007NE.bmp"},
+-- Tile #7, View NW
+{-32,-40,"Tl0007NW.bmp"},
+-- Tile #8, View SW
+{-32,-80,"Tl0008SW.bmp"},
+-- Tile #8, View SE
+{-32,-80,"Tl0008SE.bmp"},
+-- Tile #8, View NE
+{-32,-80,"Tl0008NE.bmp"},
+-- Tile #8, View NW
+{-32,-80,"Tl0008NW.bmp"},
+-- Tile #9, View SW
+{-32,-40,"Tl0009SW.bmp"},
+-- Tile #9, View SE
+{-32,-40,"Tl0009SE.bmp"},
+-- Tile #9, View NE
+{-32,-40,"Tl0009NE.bmp"},
+-- Tile #9, View NW
+{-32,-40,"Tl0009NW.bmp"},
+};
+
+[imgDir]
+
+-- Image directory dump, not used by compiler
+
+index=0,startAddress=0x0,xofs=-48,yofs=0,width=96,height=98,unused=0,flags=1
+index=1,startAddress=0x24C0,xofs=-48,yofs=0,width=96,height=98,unused=0,flags=1
+index=2,startAddress=0x4980,xofs=-48,yofs=0,width=96,height=98,unused=0,flags=1
+index=3,startAddress=0x6E40,xofs=-48,yofs=0,width=96,height=98,unused=0,flags=1
+index=4,startAddress=0x9300,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=5,startAddress=0xA500,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=6,startAddress=0xB700,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=7,startAddress=0xC900,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=8,startAddress=0xDB00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=9,startAddress=0xED00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=10,startAddress=0xFF00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=11,startAddress=0x11100,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=12,startAddress=0x12300,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=13,startAddress=0x13500,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=14,startAddress=0x14700,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=15,startAddress=0x15900,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=16,startAddress=0x16B00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=17,startAddress=0x17D00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=18,startAddress=0x18F00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=19,startAddress=0x1A100,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=20,startAddress=0x1B300,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=21,startAddress=0x1CF00,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=22,startAddress=0x1EB00,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=23,startAddress=0x20700,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=24,startAddress=0x22300,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=25,startAddress=0x23500,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=26,startAddress=0x24700,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=27,startAddress=0x25900,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=28,startAddress=0x26B00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=29,startAddress=0x27D00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=30,startAddress=0x28F00,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=31,startAddress=0x2A100,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=32,startAddress=0x2B300,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=33,startAddress=0x2CF00,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=34,startAddress=0x2EB00,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=35,startAddress=0x30700,xofs=-32,yofs=-80,width=64,height=112,unused=0,flags=1
+index=36,startAddress=0x32300,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=37,startAddress=0x33500,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=38,startAddress=0x34700,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1
+index=39,startAddress=0x35900,xofs=-32,yofs=-40,width=64,height=72,unused=0,flags=1

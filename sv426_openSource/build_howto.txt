@@ -1,0 +1,20 @@
+
+
+Steps: 
+
+- Set "<sourceBase>/include" as an include directory in the MSVC6 IDE, where <sourceBase> is the folder you extracted the source files into (assuming you kept subfolder names intact upon extracting).
+
+- (optional, see below) Build rct2lib/rct2lib.dsw and rct1lib/rct1lib.dsw, after setting the output dlls (link tab in project options) to <windowsDir>/system32/rct<#>lib.dll respectively, where <#> 1 or 2 and <windowsDir> is the path your Windows directory/folder. 
+
+- If you don't want/need to change rct2lib or rct1lib, just use the pre-built dlls in the exe subfolder.
+
+- Build sv426_test/sc426_test.dsw (everything named "sc426" should be "sv426", so you can change then if you don't mind some build complications)
+
+- Rename an RCT 1 park (SV4) to "testsv4.sv4", put it into the same folder as "sv426_test.exe" and run the exe. You should have a new sv6 file in the same directory, named "testsv6.sv6".
+
+Notes: 
+- The source code, project, and workspace files are designed for MS Visual C++ 6
+
+- Since I had it designed to work on my hard drive's folder structure, you may still have to change a few references and other paths.  
+
+ 

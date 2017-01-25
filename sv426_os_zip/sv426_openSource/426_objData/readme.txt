@@ -1,0 +1,1 @@
+Put all "dat"s in this folder into your RCT2 ObjData folder.

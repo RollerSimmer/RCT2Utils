@@ -1,0 +1,498 @@
+------------------------
+--- 8 Cars per Trainer - 
+--- Version 1.20 -------
+------------------------
+
+Contents:
+
+A. Introduction
++-1. About 8 Cars per Trainer
++-2. Known Bugs and Problems
++-3. Getting Started
+B. Menu Commands
++-1. Park Menu
++-2. Money Menu
++-3. Weather Menu
++-4. Landscape Menu
++-5. Custom Objects Menu
++-6. Staff Menu
+| +-1. Handyman Submenu
+| +-2. Mechanic Submenu
+| +-3. Security Submenu
+| +-4. Entertainer Submenu
+| +-5. Caterer Submenu
+| +-6. First Aid Submenu
+| +-7. Park Guide Submenu
+| +-8. Researcher Submenu
+| +-9. Banker Submenu
+| +-10. Advertising Submenu
++-7. Rides Menu
++-8. Guests Menu
++-9. Miscellaneous Menu
+
+---------------------------------------------------------------------------------------
+-Part A: Introduction
+---------------------------------------------------------------------------------------
+--A-1: About 8 Cars Per Trainer
+
+8 Cars per Trainer is a trainer for the commercial game RollerCoaster Tycoon 2 which is 
+copyrighted by Chris Sawyer and distributed by Infogrames.  This program is in no way 
+affiliated with or recognized by Chris Sawyer, Infogrames, etc. and they do NOT support 
+it in any way.
+
+With this trainer you can perform numerous functions while the game is running.  Use of 
+this program may cause your game to crash, losing your current game status.  Be sure to 
+save before using any function(s) due to the unpredictability of this type of program. As 
+always with these types of programs, use at your own risk.
+
+This trainer has been tested on the U.S. (ver 2.01.028) and the 
+demo (ver 2.01.036p) versions of RCT2 and works properly on those versions.
+It may or may not work on other versions; I can't test versions I
+don't have so I don't know it will work on others.
+
+Copyright 2003, John Anderson
+
+--A-2: Known Bugs and Problems
+
+Some bugs or other errors have become evident while testing this program:
+-When adding a custom message, using some icons (for instance, coins) and clicking on 
+the icon when the message is displayed will cause a error trapper.
+-The fix breakdowns function doesn't fully work, but I left it "active", so don't use it yet.
+
+--A-3: Getting Started
+
+To install the trainer, extract all the files within the zip into one folder.
+
+Before starting the trainer, you must start RCT2 first.  This way 
+the functions will work properly. 
+
+When you want to exit the game screen, press <alt+tab> (or 
+<alt+esc>) to activate the trainer window.  This will switch the 
+window focus to the trainer.
+
+---------------------------------------------------------------------------------------
+-Part B: Menu Commands
+---------------------------------------------------------------------------------------
+--B-1: Park Menu
+
+These are commands for editing park status, and other 
+miscellaneous functions:
+
+Open - 
+	Opens park
+
+Close -	
+	Closes park
+
+Invert Land Ownership -
+	Sets unowned to owned, and visa versa. Good for editing
+	unowned land while making it possible to
+	restore previous ownership
+
+	Using the "Ignore Rights & For Sale" 
+	option preserves the status of
+	for sale land and land with 
+	construction rights for sale/owned.
+
+Set unowned to rights -
+	Obtains contruction rights for unowned land
+
+Own All Land -
+	Own all the land that is currently unowned and unpathed
+	(Construction rights are obtained for pathed land)
+
+De-own Border Land - 
+	De-own the land at the edge of the park.  This is  
+	mainly for when you are in the scenario editor and aren't 
+	allowed to change ownership of the border.
+
+{Restore/Remove} Border Fence -
+	Restore or remove the park 
+	border fence from the game map,
+
+Change Guest Entry Points -
+	Change where guests enter the game map. 
+	This function takes some practice, but lets you
+	make guests enter at any spot on the map.  This is
+	good if you screwed up in the Scenario Editor
+	or for making your guests "teleport" instantly to the 
+	center of the map. 
+
+Reset Date -
+	Resets the date to March 1, Year 1. This was a classic 
+	function on nearly every RCT1 trainer.
+
+Add Custom Message -
+	Display a custom-made message on screen.  This function is
+	really good for releasing parks with a welcome/intro message.
+	
+	You can set the icon for the message, but usew caution.
+	Some icons cause the game to crash is the related object
+	associated with the icon cannot be displayed when clicked on.
+	"Safe" icons include "award", "graph", and "crowd of people"
+
+Clear All Messages -
+	Clear the current message and the list of "recent messages".
+
+Quit Trainer -
+	Quit 8 Cars Per Trainer.  You can also click the close button
+	on the title bar or press alt+F4.
+  
+--B-2: Money Menu
+
+Here are commands for editing financial status:
+
+Use Money - 
+	Activate the usage of money in game. 
+
+	Note: if you started out with a free scenario,
+	you must manually set all prices in shops, etc.
+
+Don't Use Money - 
+	De-activate the usage of money in game. 
+
+	Note: guests still pay if the item/ride/entry prices aren't 
+	set to free.  Since new guests will enter with zero cash,
+	this may cause a problem of guests not riding/shopping.
+
+
+Add 5,000/50,000/500,000 Cash -
+	Increases your parks funds by the specified amount 
+	of units. The values are rounded.
+
+Subtract 5,000/50,000/500,000 Cash -
+	Decreases your parks funds by the specified amount 
+	of units.  The values are rounded.  
+
+--B-3: Weather Menu
+
+These functions are for changing the weather:
+
+Make Freezing - 
+	Sets current temperature to 32F and weather to partly cloudy 
+
+Make Cool -
+	Sets current temperature to 46F and weather to partly cloudy 
+
+Make Sunny -
+	Sets current temperature to 73F and weather to clear skies 
+
+Make Hot -
+	Sets current temperature to 99F and weather to clear skies 
+
+Start Shower -
+	Sets current temperature to 61F and weather to light rain
+
+Start Heavy Rain -
+	Sets current temperature to 61F and weather to heavy rain
+
+Start Thunderstorm -
+	Sets current temperature to 61F and weather to heavy rain
+
+Cycle Weather -
+	Not implemented yet
+
+--B-4: Landscape Menu
+
+Functions for changing the terrain of your park:
+
+Load Terrain BMP -
+	Loads a terrain "elevation map" from a Windows bitmap
+	(BMP).
+
+	This trainer offers a feature to load a terrain into 
+	the game from a Windows bitmap, representing height 
+	levels through the color levels (or indexes).  This is a 
+	fairly "risky"  function so, like swimming without a 
+	lifeguard  you should use caution and proceed at your 
+	own risk  and know what you are doing (also  save 
+	whatever you have done since there's no reversing this).
+
+	For this function to work you need a 256-color 
+	(grayscaled preferred) squared (width=height),  
+	uncompressed Windows bitmap (BMP extension) that has  
+	the same dimensions as the current game  map size.  
+	If it is not all of the  above it will not load.  
+	Also, it is recommended that the  current game mode be 
+	the Scenario Editor with no scenery or park entries on 
+	the map (just keep the default map).  It /can/ work in 
+	the regular game but all that is altered is the surface 
+	data, so that the buildings and other objects may be 
+	either buried or elevated from the land.
+
+ 	To load into the Scenario Editor, set the map size to 
+	the  dimensions of the bitmap image you are going to 
+	load.  Next, switch to the trainer window (alt+tab or 
+	alt+esc) and select  "Landscape"->"Load Terrain BMP" 
+	and a file menu should show up. Select the desired bitmap 
+	file and press OK.  Wait until  the hourglass mouse cursor 
+	has changed back to the arrow and check back in RCT2.  
+	The terrain should be loaded.  There is  a sample 
+	128x128 bitmap of a Six Flags Magic Mountain terrain  
+	I derived out of a USGS terrain file.  It demonstrates 
+	what  can be done with this function.
+
+ 	This is a beta-level function and I haven't tested it  
+	thoroughly so use caution!  I'm still determining the 
+	details of the  map data and trying to see if I can 
+	improve the slope generation  algorithm I used.  I 
+	haven't as yet experienced any crashes using  this 
+	function but I can't guarantee it will not ever happen.
+
+	Color Levels (Indexes) to RCT Height Units: 
+	In RCT2, 2 color levels is equal to 1 height unit  
+	(14 color level being 0 in RCT2 height units).
+
+Cap land at max height -
+	Caps (limits) all land heights to the 
+	maximum height allowed for editing.
+	Use this function when you used a function
+	that raised land so high you can't edit it in game.
+
+Adjust Land Mover Size -
+	Used to adjust the size of the size of the land, water,
+	or scenery removal tool.
+
+--B-5: Custom Objects Menu
+
+This was going to be for loading custom objects on the fly in the 
+game but may be removed in favor of a file-based utility.
+
+Load Object DAT File -
+	Not implemented yet
+
+--B-6: Staff Menu
+
+Handyman Submenu -
+	see B-6.1
+
+Mechanic Submenu - 
+	see B-6.2
+
+Security Submenu -
+	see B-6.3
+
+Entertainer Submenu -
+	see B-6.4
+
+Caterer Submenu -
+	see B-6.5
+
+First Aid Submenu -
+	see B-6.6
+
+Park Guide Submenu -
+	see B-6.7
+
+Researcher Submenu -
+	not yet implemented
+
+Banker Submenu - 
+	see B-6.9
+
+Advertising Submenu -
+	see B-6.10
+
+Fast Staff -
+	This speeds up your staff.     
+
+Fire All - 
+	Not yet implemented
+
+---B-6.1: Handyman Submenu 
+
+These are functions specific to handymen:
+
+Empty Trash -
+	Not yet implemented
+
+Water Gardens -
+	Water all the gardens in the park.
+
+Mow Grass -
+	Mow all the grass in the park
+
+Clean Paths -
+	Not yet implemented
+
+Repair Vandalism -
+	Not yet implemented	
+		
+
+---B-6.2: Mechanic Submenu 
+
+Functions related to mechanics:
+
+Renew Rides - 
+	Sets all rides in the park to new (built this year)
+
+Repair Rides -
+	Repair all rides in the park.  Doesn't work yet.
+
+Make Rides Reliable -
+	Sets the reiability of all rides to 100%
+
+---B-6.3: Security Submenu 
+
+These are security guard-type functions:
+
+Pacify Vandals -
+	Removes the "vandal" status from any guest and sets their 
+	happiness to 100%
+
+---B-6.4: Entertainer Submenu 
+
+Make Guests Happy - 
+	Set the happiness of all guests to 100%
+
+Give Guests Balloons -
+	Hand out free balloons to all your guests.  The balloons
+	will be different colors.
+
+---B-6.5: Caterer Submenu 
+
+Catering functions to feed your guests.
+
+Give Guests Drinks -
+	All guests' thirst level will become 0
+
+Give Guests Food -
+	All guests' hunger level will become 0
+
+---B-6.6: First Aid Submenu
+
+First-aid functions for your guests health:
+
+Heal Nausea -
+	All nauseated guests will become healthy
+
+Vitalize Guests - 
+	All guests' energy will reach maximum level
+
+---B.6.7: Park Guide Submenu 
+
+Guide functions to help your guests around the park
+
+Guide Guests to Restrooms -
+	Guests' restroom urgency will go to zero
+
+Hand Out Park Maps -
+	All guests get free maps
+
+Give Guests Umbrellas -
+	All guests get free umbrellas
+
+---B-6.8: Researcher Submenu
+
+No functions yet
+
+---B-6.9: Banker Submenu - 
+	
+	Bank-related functions go here
+		
+	Give All Guests 100 Cash - 
+		not yet implemented
+
+	Give All Guests 1,000 Cash - 
+		not yet implemented
+	 
+---B-6.10: Advertising Submenu -
+
+	These are functions related to advertising
+
+	Promote Gentle Rides -
+		Guests will be willing to ride any ride below 
+		their maximum preferred intensity level,
+	Promote Thrill Rides -
+		Guests will be willing to ride any ride above  
+		their mininum preferred intensity level,
+	Promote All Rides - 
+		Guests will [within reason] ride
+		any ride.
+
+--B-7: Rides Menu
+
+Edit Ride Stats - 
+	This will open a dialog box that will let you edit
+	individual rides. It's safest to close a ride before using this menu.
+
+	Control Items explained:
+		Ride# - The index of the ride (each ride has an index from 0 to 254)
+		--Actions--
+		Fix Breakdown - Fix the ride if it currently broken down (not yet implemented)
+		Renew - Make the ride brand new (built this year)
+		Make Reliable - Set relibbility of ride to 100%.
+		--Special Actions-- 
+		Raise/Lower - Raises track up or down by an offset
+			(doesn't affect stations)
+		Bury - Cover sections of track with 
+			land
+		Excavate - Take track out from
+			underground
+		Zero Clearance:
+			Make certain pieces of track 
+			"zero clearance", meaning you 
+			can build through them.
+		--Options--
+		Track Type - The ride's track type or the base ride type.
+		Train Type - The ride's vehicle/shop type.
+		Operating Mode - The operating mode of the ride
+		Color Scheme (for special actions) -
+			The track color scheme to perform a special action on.
+			No other track pieces besides the 
+			track painted with this color
+			scheme will be affected by speial actions.
+		Height Offset (for Raise/Lower) - 
+			The height offset for the raise/lower 
+			special action.  Negative values lower the
+			ride, positive raises it.
+		Launch Speed - Ride's # of launch speed or rotations  
+		# Circuits - The amount of times the ride travels through 
+			its course.
+		Lift Speed - Chain lift speed
+		Age (years) - Ride's age in years.
+		# Trains - How many trains will run.
+		# Cars - Number of cars per train.
+
+	You must select a ride first before setting values.
+	Press "Apply" to set the ride and keep editing,
+	"OK" to apply and exit, and "Cancel" to abort the edit.
+
+10 Minute Inspections - 
+	not yet implemented
+Uniform Item Pricing - 
+	not yet implemented
+
+--B-8: Guests Menu
+
+Edit Guest Stats - 
+	Not yet implemented
+
+Trams -
+	Not yet implemented
+
+Remove All Guets -
+	Not yet implemented
+
+Reset Guest Numbers - 
+	Not yet implemented
+
+All-Around Guests - 
+	Maximizes all guests' happiness, energy, and high intensity preference;
+	minimizes their nausea, bathroom need, thirst, hunger, and low inensity preference.
+
+--B-9: Miscellaneous Menu
+
+Remove Floating Objects - 
+	not yet implemented
+
+Zero all Clearances
+	Sets all park clearances to 0,  neaning you can build through 
+	everything.
+
+Restore Clearances:
+	not yet implemented
+-----------------------------------------------
+Last updated 3:48 PM 4/15/03
+
+

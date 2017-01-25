@@ -1,0 +1,62 @@
+== Introduction ==
+
+This is a small utility to make palette (water color) objects for RCT2.  The program requires that you have the ability to edit a 24-bit Windows bitmap for it to be of any use.  It converts the colors in the image to a palette object.  
+
+
+== DOS command line usage ==
+
+RCT2 Palette Maker -- makes an RCT2 palette (ie water color) object 
+from a 24-bit Windows bitmap 
+USAGE: RCTPALMAKER objName objFileName objCaption bmpFileName
+	objName		Internal game name of the object (8 characters max)
+	objFileName	File name of the object (generally objName+".dat"
+	objCaption	Text describing what the object is 
+			(ex."Natural Water")
+	bmpFileName	Source 24-bit (16M colors) Windows bitmap file
+			(.BMP) to load as a palette.  Recomended dimensions
+			 are 16x21 (see example bitmap)
+(parameters must be in listed order) 
+
+== Installing ==
+
+To install, simply extract the files contained in the zip into a single folder, with the exception of the system files listed below:
+
+COMMDLG.DLL
+CMDIALOG.VBX
+
+You should extact these into your Windows system folder (usually "C:\Windows\System") if they are not already there.  
+
+== Starting out == 
+
+There are three example bitmaps included to get you started, as well as a batch (.bat) file that you can use as a template and example on how to use the program.  It is a DOS console utility (since I wasn't up to making a GUI).  
+
+-- Editing bitmap images -- 
+
+First off, here are some tips using editing the images that will be your new palette object file:
+
+As you will see, the colors are grouped by hue, be sure to maintain this organization, as the utility and RCT2 read them sequential left-to-right, top-to-bottom.  It's pretty easy to discern where one hue starts and another one ends.  
+
+To edit a certain hue, you can use some advanced image editor functions like colorize, brighten, etc.  You will want to select all the colors in the hue to isolate them for editing.  If you are aquainted with the HSL (hue, saturation, lightness). 
+
+You can resize the image, but just make sure you have at least 326 pixels total.  That's how many palette color entries there are.  The entries start at the top-left corner, across the row (scanline), start over left to right on the next line, and so on.  To find out the entry index # of a certain pixel, use this formula:
+
+palEntryIndex=Y*ImageWidth+X
+
+Always save the bitmap as a 24-bit (16 million colors) Windows bitmap (.BMP).  The program needs it to be in this format.
+
+At the end of the file, as well (as the third to last hue before it) are water color hues. These are pretty easy to spot.  Edit these hues to 
+create a new water color.  
+
+-- Using the batch file -- 
+
+There is a batch file included in this zip archive that is a sample for making the DAT file "WTRPURP.DAT" (purple water).  This can be used as template for other batches, as well as a general example.  
+
+
+== Finishing up ==
+
+When done, make sure you copy the water file to the "ObjDat" directory of your RCT2 folder.  I'm sure most people know this by now, but I'm telling you just in case you didn't know.
+
+
+== Copyright == 
+
+This program is copyright 2004, John Anderson (ja227).  Feel free to post this on your site, as long as credit is given to the author.

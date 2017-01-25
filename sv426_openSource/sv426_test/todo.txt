@@ -1,0 +1,11 @@
+[] Fix ride conversions so it doesn't crash while testing
+|
++-[] Test ride piece construction in the ride structure.
+|
++-[]
+
+[] Fix banner conversion so that it doesn't crash
+
+
+
+

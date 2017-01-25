@@ -1,0 +1,941 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+	
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.4  (Win32)">
+	<META NAME="AUTHOR" CONTENT="John Anderson">
+	<META NAME="CREATED" CONTENT="20060801;16294700">
+	<META NAME="CHANGEDBY" CONTENT="John Anderson">
+	<META NAME="CHANGED" CONTENT="20060810;361100">
+	
+	<STYLE>
+		<!-- 
+		BODY,DIV,TABLE,THEAD,TBODY,TFOOT,TR,TH,TD,P { font-family:"Arial"; font-size:x-small }
+		 -->
+	</STYLE>
+	
+</HEAD>
+
+<BODY TEXT="#000000">
+<HR>
+	<P><CENTER>
+		<H1>Overview</H1>
+		<A HREF="#table0">syntax</A><BR>
+		<A HREF="#table1">data types</A><BR>
+		<A HREF="#table2">sections</A><BR>
+		<A HREF="#table3">section_InfoHeader</A><BR>
+		<A HREF="#table4">section_Names</A><BR>
+		<A HREF="#table5">section_pos</A><BR>
+		<A HREF="#table6">section_Images_Full</A><BR>
+		<A HREF="#table7">Section_Images_Tile</A><BR>
+		
+	</CENTER></P>
+<HR>
+<A NAME="table0"><H1>Sheet 1: <EM>syntax</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=2 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=103><COL WIDTH=565></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=103 HEIGHT=17 ALIGN=LEFT>syntax</TD>
+			<TD WIDTH=565 ALIGN=LEFT>description</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>[section]</TD>
+			<TD ALIGN=LEFT>start of section, signaled by square brackets</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>,</TD>
+			<TD ALIGN=LEFT>Commas separate values in your project file</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><FONT FACE="Andale Sans UI,Arial Unicode MS,Lucida Sans Unicode,Tahoma,Bitstream Vera Sans,Interface User,WarpSans,Geneva,Tahoma,MS Sans Serif,Helv,Dialog,Albany,Lucida,Helvetica,Charcoal,Chicago,Arial,Helmet,Interface System,Sans Serif" COLOR="#000000">[a-z]=[A-Z]</FONT></TD>
+			<TD ALIGN=LEFT>The parser is case-insensitive; capital and lowercase letters are treated the same in symbols.</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>newlines</TD>
+			<TD ALIGN=LEFT>statements over separate lines are treated the same as a single line entry</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><FONT FACE="Times New Roman">;</FONT></TD>
+			<TD ALIGN=LEFT>Marks the end of a statement</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>--</TD>
+			<TD ALIGN=LEFT>Double hyphens at the start of a line denote a comment, and the line is ignored</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table1"><H1>Sheet 2: <EM>data types</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=3 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=86><COL WIDTH=343><COL WIDTH=343></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=86 HEIGHT=18 ALIGN=LEFT>Type </TD>
+			<TD WIDTH=343 ALIGN=LEFT>Desc</TD>
+			<TD WIDTH=343 ALIGN=LEFT>Notes</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>[]</TD>
+			<TD ALIGN=LEFT>appended brackets indicate array of [#] entries, of type</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT>A special enumerated type which has two values: on and off.  Alternatively true and false can be used, as well as yes/no.  (on=true=yes, off=false=no)</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>enumerated</TD>
+			<TD ALIGN=LEFT>A value type with a set amount of predefined symbols, each of which represents an abstracted value</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>number</TD>
+			<TD ALIGN=LEFT>a positive whole number.</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>a signed (+/-) whole number</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=129 ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>Literal text, closed with a double quotation mark at each end (ex: &rdquo;this is a string&rdquo;).  The quotes are omitted in evaluation.  If you want to include literal quotes in your string value,  you need to do so with '' (two single quote marks (')).  These will be automatically converted to a double quote mark upon evaluation.  Otherwise, double quote marks will be interpreted as the start or end of a string.</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>string[length]</TD>
+			<TD ALIGN=LEFT>a string with a fixed maximum length</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>structure</TD>
+			<TD ALIGN=LEFT>A type that consists of an ordered array of fields, closed by curly braces, with each field separated by commas.  </TD>
+			<TD ALIGN=LEFT>Format is {valA,valB,valC,....} ; It reads the fields in order listed in documentation.</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=193 ALIGN=LEFT>type[n]</TD>
+			<TD ALIGN=LEFT>if one or more subscripts are given in brackets, this means there are n entries of values of that type in array</TD>
+			<TD ALIGN=LEFT>multi-dimensional arrays are given in [subscript1][subscript2][subscript3]...[subscriptN] for n subscripts.  The last subscript is least significant, the first is most significant.  For example [y][x] is interpreted as [1][1],[1][2],...,[1][x],[2][1],...,[2][x],....,[y][1],...,[y][x].  In a 2-d array, the x &ldquo;dimension&rdquo; is read as a &ldquo;row&rdquo;, and after each row is read, the y dimension is incremented and that row is read, and so on.  Expand that explanation to 3 or more dimensions, with the left-most dimension being processed first, and the rightmost last.  </TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>(n1..n2)</TD>
+			<TD ALIGN=LEFT>Subtype of number which only takes values in the range  from n1 to n2</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table2"><H1>Sheet 3: <EM>sections</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=3 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=103><COL WIDTH=308><COL WIDTH=445></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=103 HEIGHT=50 ALIGN=LEFT>Here are the recognized sections</TD>
+			<TD WIDTH=308 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=445 ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>Section Header</TD>
+			<TD ALIGN=LEFT>Desc.</TD>
+			<TD ALIGN=LEFT>Field Order</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>[InfoHeader]</TD>
+			<TD ALIGN=LEFT>The basic information for the object is given in this section.</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>[Names]</TD>
+			<TD ALIGN=LEFT>The text strings containing the object names are in this section</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>[pos]</TD>
+			<TD ALIGN=LEFT>This section gives the positions for each tile, </TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>[Images_Full]</TD>
+			<TD ALIGN=LEFT>A section used by the extractor, which denotes the location of the full views of the object</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>[Images_Tile]</TD>
+			<TD ALIGN=LEFT>The images for separate tiles.  Use the full images for reference as to which one goes where.</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>[end]</TD>
+			<TD ALIGN=LEFT>denotes end of project file; can be omitted</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table3"><H1>Sheet 4: <EM>section_InfoHeader</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=5 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=120><COL WIDTH=86><COL WIDTH=342><COL WIDTH=86><COL WIDTH=86></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=120 HEIGHT=17 ALIGN=LEFT>Values(in order)</TD>
+			<TD WIDTH=86 ALIGN=LEFT>Data Type</TD>
+			<TD WIDTH=342 ALIGN=LEFT>Description</TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>datName</TD>
+			<TD ALIGN=LEFT>string[8]</TD>
+			<TD ALIGN=LEFT>Name of the object.  Will also be the filename (max 8-characters)</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>tileDim</TD>
+			<TD ALIGN=LEFT>number[2]</TD>
+			<TD ALIGN=LEFT>{c,r} where c is the columns and r is the rows</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>remaps</TD>
+			<TD ALIGN=LEFT>bool[2]</TD>
+			<TD ALIGN=LEFT>States of the two remap colors.  on=used, off=unused</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>cursorSel</TD>
+			<TD ALIGN=LEFT>enumerated</TD>
+			<TD ALIGN=LEFT>Mouse cursor for construction</TD>
+			<TD ALIGN=LEFT>Enum Values</TD>
+			<TD ALIGN=LEFT>Desc</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>cs_hourGlass</TD>
+			<TD ALIGN=LEFT>Hour glass cursor</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>buildFee</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>cost to build object</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>removeFee </TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>cost to remove object</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>landmark</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT>Whether or not this is a &ldquo;sightseeing&rdquo; item peeps &ldquo;take pictures&rdquo; of. </TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table4"><H1>Sheet 5: <EM>section_Names</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=8 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=86><COL WIDTH=86><COL WIDTH=86><COL WIDTH=274><COL WIDTH=103><COL WIDTH=86><COL WIDTH=86><COL WIDTH=86></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=86 HEIGHT=17 ALIGN=LEFT>Value</TD>
+			<TD WIDTH=86 ALIGN=LEFT>Alias</TD>
+			<TD WIDTH=86 ALIGN=LEFT>Data Type</TD>
+			<TD WIDTH=274 ALIGN=LEFT>Notes</TD>
+			<TD WIDTH=103 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT>english_UK</TD>
+			<TD ALIGN=LEFT>english</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>Can be referred to as english_UK or english, same goes for other aliases of a language identifier</TD>
+			<TD ALIGN=LEFT>&quot;english_UK&quot;</TD>
+			<TD ALIGN=LEFT>&quot;english&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;english_UK&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;english&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>english_USA</TD>
+			<TD ALIGN=LEFT>american</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>Default language, unspecified language slots get filled with this.</TD>
+			<TD ALIGN=LEFT>&quot;english_USA&quot;</TD>
+			<TD ALIGN=LEFT>&quot;american&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;english_USA&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;american&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>francais</TD>
+			<TD ALIGN=LEFT>french</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;francais&quot;</TD>
+			<TD ALIGN=LEFT>&quot;french&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;francais&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;french&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>deutsch</TD>
+			<TD ALIGN=LEFT>german</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;deutsch&quot;</TD>
+			<TD ALIGN=LEFT>&quot;german&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;deutsch&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;german&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>espanol</TD>
+			<TD ALIGN=LEFT>spanish</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;espanol&quot;</TD>
+			<TD ALIGN=LEFT>&quot;spanish&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;espanol&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;spanish&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>italiano</TD>
+			<TD ALIGN=LEFT>italian</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;italiano&quot;</TD>
+			<TD ALIGN=LEFT>&quot;italian&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;italiano&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;italian&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>nederlands</TD>
+			<TD ALIGN=LEFT>dutch</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;nederlands&quot;</TD>
+			<TD ALIGN=LEFT>&quot;dutch&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;nederlands&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;dutch&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>sverige</TD>
+			<TD ALIGN=LEFT>swedish</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;sverige&quot;</TD>
+			<TD ALIGN=LEFT>&quot;swedish&quot;</TD>
+			<TD ALIGN=LEFT>ll(&quot;sverige&quot;);</TD>
+			<TD ALIGN=LEFT>ll(&quot;swedish&quot;);</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>korean</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;korean&quot;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>ll(&quot;korean&quot;);</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>chinese</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;chinese&quot;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>ll(&quot;chinese&quot;);</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>chinese2</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;chinese2&quot;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>ll(&quot;chinese2&quot;);</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=17 ALIGN=LEFT>portugese</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>&quot;portugese&quot;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>ll(&quot;portugese&quot;);</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table5"><H1>Sheet 6: <EM>section_pos</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=5 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=86><COL WIDTH=103><COL WIDTH=86><COL WIDTH=120><COL WIDTH=291></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=86 HEIGHT=17 ALIGN=LEFT>Value</TD>
+			<TD WIDTH=103 ALIGN=LEFT>Data Type</TD>
+			<TD WIDTH=86 ALIGN=LEFT>Field(structs)</TD>
+			<TD WIDTH=120 ALIGN=LEFT>Field Data Type</TD>
+			<TD WIDTH=291 ALIGN=LEFT>Desc</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>tiles</TD>
+			<TD ALIGN=LEFT>tilePosStruct[]</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>Usually (numRows*numColums) entries</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>+</TD>
+			<TD ALIGN=LEFT>col</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>column (x-axis) of tile, leftmost=0</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>row</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>row (y-axis position) of tile, top-most=0</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>baseHeight</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>base height of the tile (in pixels, not height units)</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>clearance</TD>
+			<TD ALIGN=LEFT>number</TD>
+			<TD ALIGN=LEFT>In height units(8 pixels/unit)</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>hasSupports</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>if not given, the default or the state given in the header is used.</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>quads</TD>
+			<TD ALIGN=LEFT>bool[4]</TD>
+			<TD ALIGN=LEFT>Whether each quad is occupied or not.  Ordered in {NE,SE,SW,NW} order</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>walls</TD>
+			<TD ALIGN=LEFT>bool[4]</TD>
+			<TD ALIGN=LEFT>Whether each side has a wall or not</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table6"><H1>Sheet 7: <EM>section_Images_Full</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=4 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=86><COL WIDTH=86><COL WIDTH=206><COL WIDTH=308></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=86 HEIGHT=18 ALIGN=LEFT>Value</TD>
+			<TD WIDTH=86 ALIGN=LEFT>Data Type</TD>
+			<TD WIDTH=206 ALIGN=LEFT>Desc</TD>
+			<TD WIDTH=308 ALIGN=LEFT>Notes</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT>fullSW</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>File path of the SW view full image</TD>
+			<TD ALIGN=LEFT>All images must be 256-color Windows BMP files. path relative to the location of the source file</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>fullSE</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>SE &ldquo;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>fullNE</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>NE &ldquo;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT>fullNW</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>NW &rdquo;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+<HR>
+<A NAME="table7"><H1>Sheet 8: <EM>Section_Images_Tile</EM></H1></A>
+<TABLE FRAME=VOID CELLSPACING=0 COLS=13 RULES=GROUPS BORDER=1>
+	<COLGROUP><COL WIDTH=120><COL WIDTH=171><COL WIDTH=120><COL WIDTH=103><COL WIDTH=206><COL WIDTH=154><COL WIDTH=206><COL WIDTH=86><COL WIDTH=86><COL WIDTH=86><COL WIDTH=274><COL WIDTH=86><COL WIDTH=86></COLGROUP>
+	<TBODY>
+		<TR>
+			<TD WIDTH=120 HEIGHT=34 ALIGN=LEFT>Value</TD>
+			<TD WIDTH=171 ALIGN=LEFT>Data Type</TD>
+			<TD WIDTH=120 ALIGN=LEFT>Field(structs&amp;enum)</TD>
+			<TD WIDTH=103 ALIGN=LEFT>Field Data Type</TD>
+			<TD WIDTH=206 ALIGN=LEFT>Desc</TD>
+			<TD WIDTH=154 ALIGN=LEFT>Notes</TD>
+			<TD WIDTH=206 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=274 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+			<TD WIDTH=86 ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=66 ALIGN=LEFT>transparentColor</TD>
+			<TD ALIGN=LEFT>(0..255)</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>The palette index that serves as the transparent color for images</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT>remaps1</TD>
+			<TD ALIGN=LEFT>remapStates</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>Specifies whether certain 12-entry hue spans are mapped to remap color 1</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=82 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>+</TD>
+			<TD ALIGN=LEFT>grey</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT>10 (hue span Index)</TD>
+			<TD ALIGN=LEFT>on=remap to remap1, off=don't re-map</TD>
+			<TD ALIGN=LEFT>grey,gold,tan,yellow,brickRed,pukeGreen,oliveGreen,limeGreen,peach,indigo,blue,seaFoamGreen,purple,red,orange,teal,pink,rustBrown,remap1</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,on,off,off</TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>gold</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="22" SDNUM="1033;">22</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>comma</TD>
+			<TD ALIGN=LEFT>,</TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>tan</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="34" SDNUM="1033;">34</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>yellow</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="46" SDNUM="1033;">46</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>brickRed</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="58" SDNUM="1033;">58</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>pukeGreen</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="70" SDNUM="1033;">70</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>oliveGreen</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="82" SDNUM="1033;">82</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>limeGreen</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="94" SDNUM="1033;">94</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>peach</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="106" SDNUM="1033;">106</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>indigo</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="118" SDNUM="1033;">118</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>blue</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="130" SDNUM="1033;">130</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>seaFoamGreen</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="142" SDNUM="1033;">142</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>purple</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="154" SDNUM="1033;">154</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>red</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="166" SDNUM="1033;">166</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>orange</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="178" SDNUM="1033;">178</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>teal</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="190" SDNUM="1033;">190</TD>
+			<TD ALIGN=LEFT>Water color</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>pink</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="202" SDNUM="1033;">202</TD>
+			<TD ALIGN=LEFT>Default remap #2</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>on</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>rustBrown</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="214" SDNUM="1033;">214</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>remap1</TD>
+			<TD ALIGN=LEFT>bool</TD>
+			<TD ALIGN=LEFT SDVAL="243" SDNUM="1033;">243</TD>
+			<TD ALIGN=LEFT>Default remap #1</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>off</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT>remaps2</TD>
+			<TD ALIGN=LEFT>remapStates</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>Specifies whether certain 12-entry hue spans are mapped to remap color 2</TD>
+			<TD ALIGN=LEFT>Same format as remap, for the 2nd remap color</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT>tileImages</TD>
+			<TD ALIGN=LEFT>tileImageStruct[1+nTiles][4]</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>4 views of each tile.  The first &ldquo;tile&rdquo; is the menu image (4 views as well) </TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=34 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>+</TD>
+			<TD ALIGN=LEFT>xOfs</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>offset from the origin ((0,0)=center of tile) to place image</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=18 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>yOfs</TD>
+			<TD ALIGN=LEFT>-number</TD>
+			<TD ALIGN=LEFT>&ldquo;</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=50 ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT>bitmapName</TD>
+			<TD ALIGN=LEFT>string</TD>
+			<TD ALIGN=LEFT>file path of the view's bitmap file, relative to the location of the project file.</TD>
+			<TD ALIGN=LEFT>All images must be 256-color Windows BMP files</TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+			<TD ALIGN=LEFT><BR></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<!-- ************************************************************************** -->
+</BODY>
+
+</HTML>

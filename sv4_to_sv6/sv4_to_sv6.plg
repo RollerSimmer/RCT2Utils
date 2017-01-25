@@ -1,0 +1,158 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sv4_to_sv6 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSP38C.tmp" with contents
+[
+/nologo /Zp1 /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\games\rct2 files\utils\sv4_to_sv6\1to2_convert\sv4to6convert.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSP38C.tmp" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSP38D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/sv4_to_sv6.pdb" /debug /machine:I386 /force /out:"Debug/sv4_to_sv6.exe" /pdbtype:sept 
+".\Debug\animationConvert.obj"
+".\Debug\bannerConvert.obj"
+".\Debug\colorConvert.obj"
+".\Debug\mapConvert.obj"
+".\Debug\messageConvert.obj"
+".\Debug\parkConvert.obj"
+".\Debug\rideConvert.obj"
+".\Debug\spriteConvert.obj"
+".\Debug\sv4to6convert.obj"
+".\Debug\trackElementConvert.obj"
+".\Debug\SV6_ENCODE.obj"
+".\Debug\SV6_DECODE.obj"
+".\Debug\rct2Funcs.obj"
+".\Debug\rctFuncs.obj"
+".\Debug\StdAfx.obj"
+".\Debug\sv4_to_sv6.obj"
+".\Debug\sv4_to_sv6Dlg.obj"
+".\Debug\SV6_OBJDAT.obj"
+".\Debug\sv4_to_sv6.res"
+"..\..\..\..\Files\vc2\vcLib\lib\prompt.lib"
+"..\..\..\..\Files\vc2\vcLib\lib\FileIO2.lib"
+"..\..\..\..\Files\vc1\vclibs\libs\stdlib2.lib"
+]
+Creating command line "link.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSP38D.tmp"
+<h3>Output Window</h3>
+Compiling...
+sv4to6convert.cpp
+c:\files\vc2\vclib\include\stdmacros.h(16) : note C6311: e:\games\rct2 files\utils\sv4_to_sv6\sv4_to_sv6dlg.h(17) : see previous definition of 'DDX_GET'
+c:\files\vc2\vclib\include\stdmacros.h(17) : note C6311: e:\games\rct2 files\utils\sv4_to_sv6\sv4_to_sv6dlg.h(16) : see previous definition of 'DDX_SET'
+e:\games\rct2 files\utils\sv4_to_sv6\1to2_convert\sv4to6convert.cpp(13) : note C6311: c:\files\vc2\vclib\include\stdmacros.h(6) : see previous definition of 'sz'
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+bannerConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+bannerConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+bannerConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+bannerConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+bannerConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+bannerConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+mapConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+parkConvert.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in mapConvert.obj; second definition ignored
+spriteConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+spriteConvert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_banner)[2]" (?colorMaps_banner@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_walls)[2]" (?colorMaps_walls@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_lScen)[2]" (?colorMaps_lScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "enum RCT_COLOR (*  colorMaps_sScen)[2]" (?colorMaps_sScen@@3PAY01W4RCT_COLOR@@A) already defined in colorConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char *  RCT1to2colorConvertTable" (?RCT1to2colorConvertTable@@3PAEA) already defined in colorConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+sv4to6convert.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT_ADDR_MAPXYSPRITECHAININDEXES@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_PARKMAPPOINTERS" (?_RCT_ADDR_PARKMAPPOINTERS@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCENMULTILESPECBASE" (?RCT_ADDR_SCENMULTILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_GAMEDATABASE" (?RCT_ADDR_GAMEDATABASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  _RCT_ADDR_LANDMOVERSIZE" (?_RCT_ADDR_LANDMOVERSIZE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "struct SV4_PARKMAPDATA  SV4_BORDERTILE" (?SV4_BORDERTILE@@3USV4_PARKMAPDATA@@A) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT_SHOPTRACKTYPES" (?RCT_SHOPTRACKTYPES@@3PAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_SCEN1TILESPECBASE" (?RCT_ADDR_SCEN1TILESPECBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "enum RCT_VERSION  RctVersion" (?RctVersion@@3W4RCT_VERSION@@A) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char * *  RCT_ADDR_TRACKPIECECONSTRUCTOPBASE" (?RCT_ADDR_TRACKPIECECONSTRUCTOPBASE@@3PAPAEA) already defined in mapConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+trackElementConvert.obj : warning LNK4006: "union RCT_VERSIONDATASTRUCT *  RCT_VERSIONDATA" (?RCT_VERSIONDATA@@3PATRCT_VERSIONDATASTRUCT@@A) already defined in mapConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in animationConvert.obj; second definition ignored
+sv4_to_sv6.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+sv4_to_sv6.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in animationConvert.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in animationConvert.obj; second definition ignored
+LINK : fatal error LNK1181: cannot open input file "..\..\..\..\Files\vc2\vcLib\lib\prompt.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+sv4_to_sv6.exe - 1 error(s), 100 warning(s)
+</pre>
+</body>
+</html>

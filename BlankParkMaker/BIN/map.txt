@@ -1,0 +1,7 @@
+Differences between 
+	in_mapData.bin 
+and 
+	out_mapData.bin 
+----------------------------------------------
+Address		Length of span	File 1	File 2
+----------------------------------------------

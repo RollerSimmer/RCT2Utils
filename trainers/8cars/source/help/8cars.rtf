@@ -1,0 +1,150 @@
+{
+\rtf1
+\ansi
+\deff0
+{
+\fonttbl
+{\f0\froman Times New Roman;}
+}
+
+
+{\colortbl
+;
+\red0\blue255\green0;
+\red0\blue0\green128;
+}
+
+
+\viewkind4
+\uc1
+\pard
+\lang1033
+\f0
+\fs24 
+
+#{\footnote landscape}
+${\footnote Landscape Options}
+K{\footnote loading;terrain;bitmap;landscape} 
+\cf1\b\fs36
+Landscape Options\line
+\plain
+\par
+
+\line
+\li1440
+\cf2\i\b Load Terrain BMP\plain -
+
+This trainer offers a feature to load a terrain into the game
+ from a Windows bitmap, representing height levels through
+ the color levels (or indexes).  This is a fairly "risky" 
+ function so, like swimming without a lifeguard 
+ you should use caution and proceed at your own risk 
+ and know what you are doing (also 
+ save whatever you have done since there's no reversing this).
+\line
+	For this function to work you need
+ a 256-color (grayscaled preffered) squared (width=height), 
+ uncompressed Windows bitmap (BMP extension) that has 
+ the same dimensions as the current game 
+ map size.  If it is not all of the 
+ above it will not load.  Also, it is recommended that the 
+ current game mode be the Scenario Editor with no scenery or
+ park entries on the map (just keep the default map).  It
+\i can \plain
+	 work in the regular game but all that is altered is the
+ surface data, so that the buildings and other objects may be either
+ buried or elevated from the land.
+\line
+ 	To load into the Scenario Editor, set the map size to the 
+ dimensions of the bitmap image you are going to load.  Next,
+ switch to the trainer window (alt+tab or alt+esc) and select 
+ "Landscape"->"Load Terrain BMP" and a file menu should show up.
+ Select the desired bitmap file and press OK.  Wait until 
+ the hourglass mouse cursor has changed back to the arrow and
+ check back in RCT2.  The terrain should be loaded.  There is 
+ a sample 128x128 bitmap of a Six Flags Magic Mountain terrain 
+ I derived out of a USGS terrain file.  It demonstrates what 
+ can be done with this function.
+\line
+ 	This is still a shaky beta-level function and I haven't tested it 
+ thoroughly so use caution!  I'm still determining the details of the 
+ map data and trying to see if I can improve the slope generation 
+ algorithm I used.  I haven't as yet experienced any crashes using 
+ this function but I can't guarantee it will not ever happen.
+\line
+\b
+Color Levels (Indexes) to RCT Height Units 
+\plain
+\line
+	 In RCT2, 2 color levels is equal to 1 height unit 
+ (14 color level being 0 in RCT2 height units).
+\par
+\pard
+
+\page
+
+
+#{\footnote weather}
+${\footnote Weather Options}
+K{\footnote weather} 
+
+\b\cf1\fs36 Weather Options \plain\par\line
+
+\li1440
+\i\b\cf2 Make Sunny\plain -
+ Choosing this option will
+ set the temperature to 71F and clear the skies.
+\par
+
+\page
+
+#{\footnote park}
+${\footnote Park Options}
+K{\footnote Open;Close;Park} 
+
+\b\cf1\fs36 Park Options \plain\par\line
+
+\li1440
+\i\cf2\b Open Park\plain - will open the park 
+(even if it is disabled in the game).
+\line
+\i\cf2\b Close Park\plain - will close the park 
+(even if it is disabled in the game).
+\par
+
+\li1440
+\i\cf2\b Invert Land Ownership\plain - Changes unowned/rights/for sale to
+owned and owned to unowned.
+\line
+\i\cf2\b Set Unowned to Rights\plain - Sets all unowned land
+to construction rights
+\par\pard
+
+\page
+
+#{\footnote money}
+${\footnote Money Options}
+K{\footnote Money;Cash;Use Money;Don't use money} 
+
+\b\cf1\fs36 Money Options \plain\par\line
+
+\li1440
+\i\cf2\b Use Money \plain -
+ Choosing this option will set the park to 
+ use currency. 
+ \line
+\i\cf2\b Don't Use Money \plain -
+ Does the opposite of Use Money--a free mode 
+ with no cash usage.
+\par
+
+\page
+
+
+\par
+
+\page
+
+}
+
+

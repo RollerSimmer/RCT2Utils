@@ -1,0 +1,33 @@
+LIBRARY 8carsfunc
+ 
+EXPORTS 
+	RCT2KeyInterceptProc
+	Set8carsDllLocals
+	MainWndProc	
+	cmdmsg
+	GetRct2Version
+	WriteRct2Message
+	WinWrite
+	WinRead
+	SetMapEntryPoints
+	GenerateRandomTerrain
+	AboutString
+	AboutBox
+	mainWindow
+	rct2Window
+	rct2Thread
+	mainMenu
+	hinst
+	haccel
+	rct2KeyboardHook
+	rct2ThreadID
+	_8CarsTimer
+	savepath
+	_8CARS_EXENAME
+
+SECTIONS  
+	SHARED_DATA  READ WRITE SHARED
+
+
+
+ 

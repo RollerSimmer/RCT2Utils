@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ParkDat - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"out/ParkDat.res" /i "out" /d "_DEBUG" /d "_AFXDLL" "E:\games\rct2 files\utils\ParkDat\ParkDat.rc"" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSP2D2.tmp" with contents
+[
+/nologo /Zp1 /MDd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"out/" /Fo"out/" /Fd"out/" /FD /GZ /c 
+"E:\games\rct2 files\utils\ParkDat\ParkDatDlg.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSP2D2.tmp" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSP2D3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"out/ParkDat.pdb" /debug /machine:I386 /force /out:"out/ParkDat.exe" /pdbtype:sept 
+".\out\DlgProxy.obj"
+".\out\ParkDat.obj"
+".\out\ParkDat_Class_ImgPreview.obj"
+".\out\ParkDatDlg.obj"
+".\out\ReportControl.obj"
+".\out\StdAfx.obj"
+".\out\ParkDat.res"
+"..\..\..\..\Programming\libs\libs\superString.lib"
+"C:\Files\vc2\vcLib\lib\FileIO2.lib"
+"C:\Files\vc2\vcLib\lib\prompt.lib"
+"..\..\..\..\Programming\libs\libs\ReportCtrl.lib"
+"..\..\..\..\Programming\libs\libs\img256_lib.lib"
+"..\..\rct2Lib\rct2Lib_Parkdat\rct2Lib.lib"
+]
+Creating command line "link.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSP2D3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ParkDatDlg.cpp
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "class CParkDatApp *  theAppP" (?theAppP@@3PAVCParkDatApp@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in DlgProxy.obj; second definition ignored
+ParkDat.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "class CParkDatApp *  theAppP" (?theAppP@@3PAVCParkDatApp@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in DlgProxy.obj; second definition ignored
+ParkDat_Class_ImgPreview.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "class CParkDatApp *  theAppP" (?theAppP@@3PAVCParkDatApp@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in DlgProxy.obj; second definition ignored
+ParkDatDlg.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in DlgProxy.obj; second definition ignored
+ReportControl.obj : warning LNK4006: "class CParkDatApp *  theAppP" (?theAppP@@3PAVCParkDatApp@@A) already defined in DlgProxy.obj; second definition ignored
+LINK : warning LNK4098: defaultlib "LIBCD" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCMTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+out/ParkDat.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+Creating command line "bscmake.exe /nologo /o"out/ParkDat.bsc"  ".\out\StdAfx.sbr" ".\out\DlgProxy.sbr" ".\out\ParkDat.sbr" ".\out\ParkDat_Class_ImgPreview.sbr" ".\out\ParkDatDlg.sbr" ".\out\ReportControl.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ParkDat.exe - 0 error(s), 74 warning(s)
+</pre>
+</body>
+</html>

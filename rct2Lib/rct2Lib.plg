@@ -1,0 +1,386 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: rct2Lib - Win32 Debug_System32--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPAA.tmp" with contents
+[
+/nologo /Zp1 /MTd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RCT2LIB_EXPORTS" /FR"rct2Lib___Win32_Debug_System32/" /Fo"rct2Lib___Win32_Debug_System32/" /Fd"rct2Lib___Win32_Debug_System32/" /FD /GZ /c 
+"E:\games\rct2 files\rct2Lib\RCT2\SV6\SV6.cpp"
+"E:\games\rct2 files\rct2Lib\RCT2\SV6\sv6_genNew.cpp"
+"E:\games\rct2 files\rct2Lib\RCT2\objdat\objdat_all.cpp"
+"E:\games\rct2 files\rct2Lib\RCT2\objdat\objDat_CopyImage.cpp"
+"E:\games\rct2 files\rct2Lib\RCT2\objdat\objDat_Image.cpp"
+"E:\games\rct2 files\rct2Lib\RCT2\objdat\objdat_LargeScenery.cpp"
+"E:\games\rct2 files\rct2Lib\rct2Lib.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPAA.tmp" 
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPAB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"rct2Lib___Win32_Debug_System32/rct2Lib.pdb" /debug /machine:I386 /force /out:"E:\winnt\system32\rct2Lib.dll" /implib:"rct2Lib___Win32_Debug_System32/rct2Lib.lib" /pdbtype:sept 
+".\rct2Lib___Win32_Debug_System32\SV6.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_DECODE.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_ENCODE.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_EXTRACTOBJS.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_FIXOBJECTS.OBJ"
+".\rct2Lib___Win32_Debug_System32\sv6_genNew.obj"
+".\rct2Lib___Win32_Debug_System32\sv6_map.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_OBJDAT.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_OBJDAT_fix.obj"
+".\rct2Lib___Win32_Debug_System32\sv6_rideFeatureTable.obj"
+".\rct2Lib___Win32_Debug_System32\SV6_SPRITES.obj"
+".\rct2Lib___Win32_Debug_System32\sv6_terrFuncs.obj"
+".\rct2Lib___Win32_Debug_System32\objdat_all.obj"
+".\rct2Lib___Win32_Debug_System32\objDat_CopyImage.obj"
+".\rct2Lib___Win32_Debug_System32\objDat_Image.obj"
+".\rct2Lib___Win32_Debug_System32\objdat_LargeScenery.obj"
+".\rct2Lib___Win32_Debug_System32\rct2Funcs.obj"
+".\rct2Lib___Win32_Debug_System32\rctFuncs.obj"
+".\rct2Lib___Win32_Debug_System32\readResource.obj"
+".\rct2Lib___Win32_Debug_System32\rct2Lib.obj"
+".\rct2Lib___Win32_Debug_System32\StdAfx.obj"
+".\rct2Lib___Win32_Debug_System32\rct2lib.res"
+"C:\Files\vc2\vcLib\lib\prompt.lib"
+"C:\Files\vc2\vcLib\lib\BMPLib.lib"
+"C:\Files\vc2\vcLib\lib\FileIO2.lib"
+"C:\Files\vc2\vcLib\lib\basicOps.lib"
+"..\..\..\Programming\libs\libs\img256_lib.lib"
+"C:\Files\vc1\vclibs\libs\stdlib2.lib"
+"..\..\..\Programming\libs\libs\mem3.lib"
+]
+Creating command line "link.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPAB.tmp"
+<h3>Output Window</h3>
+Compiling...
+SV6.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+sv6_genNew.cpp
+objdat_all.cpp
+objDat_CopyImage.cpp
+objDat_Image.cpp
+objdat_LargeScenery.cpp
+rct2Lib.cpp
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+SV6_DECODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _sprintf already defined in LIBCMTD.lib(sprintf.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __errno already defined in LIBCMTD.lib(dosmap.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __sopen already defined in LIBCMTD.lib(open.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: ___doserrno already defined in LIBCMTD.lib(dosmap.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _strncpy already defined in LIBCMTD.lib(strncpy.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __close already defined in LIBCMTD.lib(close.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __read already defined in LIBCMTD.lib(read.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __lseek already defined in LIBCMTD.lib(lseek.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __write already defined in LIBCMTD.lib(write.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _sscanf already defined in LIBCMTD.lib(sscanf.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _memmove already defined in LIBCMTD.lib(memmove.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __stricmp already defined in LIBCMTD.lib(stricmp.obj); second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_DECODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_ENCODE.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+sv6_genNew.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_map.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_OBJDAT.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_rideFeatureTable.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+SV6_SPRITES.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+sv6_terrFuncs.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_all.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_CopyImage.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objDat_Image.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+objdat_LargeScenery.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  zBakInc" (?zBakInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotRowInc" (?rotRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  rotColInc" (?rotColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoRowInc" (?isoRowInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR *  isoColInc" (?isoColInc@@3PAUISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_PARKMAPDATA  SV6_BORDERTILE" (?SV6_BORDERTILE@@3USV6_PARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDRTRACKPIECECONSTRUCTOPBASE" (?RCT2_ADDRTRACKPIECECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_OBJECTFILEPOINTERSBASE" (?RCT2_ADDR_OBJECTFILEPOINTERSBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  rotOrigin" (?rotOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER_BLOCK  RCT1emulationTable" (?RCT1emulationTable@@3USV6_OBJDAT_HEADER_BLOCK@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATABASE" (?RCT2_ADDR_GAMEDATABASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_GAMEDATASTARTADDR" (?RCT2_ADDR_GAMEDATASTARTADDR@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "union RCT2_VERSIONDATASTRUCT  RCT2_VERSIONDATA" (?RCT2_VERSIONDATA@@3TRCT2_VERSIONDATASTRUCT@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct PARKMAPDATA  BORDERTILE" (?BORDERTILE@@3UPARKMAPDATA@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct SV6_OBJDAT_HEADER  redWater" (?redWater@@3USV6_OBJDAT_HEADER@@A) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_LANDMOVERSIZE" (?_RCT2_ADDR_LANDMOVERSIZE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "char *  _RCT2_ADDR_PARKMAPPOINTERS" (?_RCT2_ADDR_PARKMAPPOINTERS@@3PADA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  _RCT2_ADDR_MAPXYSPRITECHAININDEXES" (?_RCT2_ADDR_MAPXYSPRITECHAININDEXES@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_SHOPTRACKTYPES" (?RCT2_SHOPTRACKTYPES@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "unsigned char *  RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE" (?RCT2_ADDR_TRACKTYPECONSTRUCTOPBASE@@3PAEA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "int  rct2Suspended" (?rct2Suspended@@3HA) already defined in SV6.obj; second definition ignored
+rct2Lib.obj : warning LNK4006: "struct ISOMETRIC_TILE_VECTOR  isoOrigin" (?isoOrigin@@3UISOMETRIC_TILE_VECTOR@@A) already defined in SV6.obj; second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _sprintf already defined in LIBCMTD.lib(sprintf.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __errno already defined in LIBCMTD.lib(dosmap.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __sopen already defined in LIBCMTD.lib(open.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: ___doserrno already defined in LIBCMTD.lib(dosmap.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _strncpy already defined in LIBCMTD.lib(strncpy.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __close already defined in LIBCMTD.lib(close.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __read already defined in LIBCMTD.lib(read.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __lseek already defined in LIBCMTD.lib(lseek.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __write already defined in LIBCMTD.lib(write.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _sscanf already defined in LIBCMTD.lib(sscanf.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: _memmove already defined in LIBCMTD.lib(memmove.obj); second definition ignored
+MSVCRTD.lib(MSVCRTD.dll) : warning LNK4006: __stricmp already defined in LIBCMTD.lib(stricmp.obj); second definition ignored
+   Creating library rct2Lib___Win32_Debug_System32/rct2Lib.lib and object rct2Lib___Win32_Debug_System32/rct2Lib.exp
+LINK : warning LNK4098: defaultlib "MSVCRTD" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCD" conflicts with use of other libs; use /NODEFAULTLIB:library
+E:\winnt\system32\rct2Lib.dll : warning LNK4088: image being generated due to /FORCE option; image may not run
+Creating temporary file "E:\DOCUME~1\John\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /o"rct2Lib___Win32_Debug_System32/rct2Lib.bsc" 
+".\rct2Lib___Win32_Debug_System32\StdAfx.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_DECODE.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_ENCODE.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_EXTRACTOBJS.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_FIXOBJECTS.SBR"
+".\rct2Lib___Win32_Debug_System32\sv6_genNew.sbr"
+".\rct2Lib___Win32_Debug_System32\sv6_map.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_OBJDAT.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_OBJDAT_fix.sbr"
+".\rct2Lib___Win32_Debug_System32\sv6_rideFeatureTable.sbr"
+".\rct2Lib___Win32_Debug_System32\SV6_SPRITES.sbr"
+".\rct2Lib___Win32_Debug_System32\sv6_terrFuncs.sbr"
+".\rct2Lib___Win32_Debug_System32\objdat_all.sbr"
+".\rct2Lib___Win32_Debug_System32\objDat_CopyImage.sbr"
+".\rct2Lib___Win32_Debug_System32\objDat_Image.sbr"
+".\rct2Lib___Win32_Debug_System32\objdat_LargeScenery.sbr"
+".\rct2Lib___Win32_Debug_System32\rct2Funcs.sbr"
+".\rct2Lib___Win32_Debug_System32\rctFuncs.sbr"
+".\rct2Lib___Win32_Debug_System32\readResource.sbr"
+".\rct2Lib___Win32_Debug_System32\rct2Lib.sbr"]
+Creating command line "bscmake.exe @E:\DOCUME~1\John\LOCALS~1\Temp\RSPAF.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+rct2Lib.dll - 0 error(s), 284 warning(s)
+</pre>
+</body>
+</html>

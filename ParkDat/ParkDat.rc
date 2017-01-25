@@ -1,0 +1,307 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ParkDat.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ParkDat.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ParkDat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "ParkDat Version 1.1",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PARKDAT_DIALOG DIALOGEX 0, 0, 358, 230
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ParkDat 1.6"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "RCT2 &Park (SV6):",IDC_STATIC,10,10,59,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC__EDIT__SV6_NAME,74,10,160,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "...",IDC__BUTTON__SV6_NAME,240,10,13,12,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "&Open (F7)",IDC__BUTTON__OPEN_SV6,258,10,40,12
+    PUSHBUTTON      "Sa&ve (F8)",IDC__BUTTON__SAVE_SV6,300,10,40,12
+    RTEXT           "Search Text:",IDC_STATIC,10,25,59,12,SS_CENTERIMAGE
+    EDITTEXT        IDC__EDIT__SEARCH,74,25,146,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Searc&h (F11)",IDC__BUTTON__SEARCH,224,25,50,12
+    LTEXT           "(Search result here)",IDC__TEXT__SEARCH_RESULT,278,26,
+                    61,12,SS_CENTERIMAGE
+    CONTROL         "List1",IDC__LIST__DATS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,40,335,89
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    9,132,335,8
+    GROUPBOX        "Outp&ut",IDC_STATIC,9,144,160,82
+    EDITTEXT        IDC_EDIT_OUTPUT,15,155,150,64,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "Edit DATs",IDC_STATIC,173,142,96,84
+    PUSHBUTTON      "&Add (F3)",IDC__BUTTON__ADD_DAT,180,151,85,13
+    PUSHBUTTON      "&Replace Selected  (F4)",
+                    IDC__BUTTON__REPLACE_SELECTED_DAT,180,165,85,12
+    PUSHBUTTON      "&Delete Selected  (F5)",
+                    IDC__BUTTON__DELETE_SELECTED_DAT,180,179,85,12
+    PUSHBUTTON      "Update &Headers  (F6)",IDC__BUTTON__UPDATE_DAT_HEADERS,
+                    180,194,85,12
+    PUSHBUTTON      "Delete Unused (F10)",IDC__BUTTON__DELETE_UNUSED,180,209,
+                    85,13
+    LTEXT           "Image:",IDC_STATIC,279,142,59,8
+    CONTROL         "",IDC__IMG_FRAME,"Static",SS_BLACKFRAME,278,153,64,64
+    PUSHBUTTON      "Update &Image  (F9)",IDC__BUTTON__UPDATE_IMG_PREVIEW,
+                    275,211,72,12,BS_CENTER | BS_VCENTER | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ParkDat MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ParkDat\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ParkDat.EXE\0"
+            VALUE "ProductName", "ParkDat Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PARKDAT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_F10,         IDC__BUTTON__DELETE_UNUSED, VIRTKEY, NOINVERT
+    VK_F11,         IDC__BUTTON__SEARCH,    VIRTKEY, NOINVERT
+    VK_F3,          IDC__BUTTON__ADD_DAT,   VIRTKEY, NOINVERT
+    VK_F4,          IDC__BUTTON__REPLACE_SELECTED_DAT, VIRTKEY, NOINVERT
+    VK_F5,          IDC__BUTTON__DELETE_SELECTED_DAT, VIRTKEY, NOINVERT
+    VK_F6,          IDC__BUTTON__UPDATE_DAT_HEADERS, VIRTKEY, NOINVERT
+    VK_F7,          IDC__BUTTON__OPEN_SV6,  VIRTKEY, NOINVERT
+    VK_F8,          IDC__BUTTON__SAVE_SV6,  VIRTKEY, NOINVERT
+    VK_F9,          IDC__BUTTON__UPDATE_IMG_PREVIEW, VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "Sv6 &File"
+    BEGIN
+        MENUITEM "&Open\tF7",                   IDC__BUTTON__OPEN_SV6
+        MENUITEM "&Save\tF8",                   IDC__BUTTON__SAVE_SV6
+    END
+    POPUP "A&ction"
+    BEGIN
+        MENUITEM "&Add\tF3",                    IDC__BUTTON__ADD_DAT
+        MENUITEM "&Replace\tF4",                ID_ACTION_REPLACE
+        MENUITEM "&Delete\tF5",                 ID_ACTION_DELETE
+        MENUITEM "Update &Headers\tF6",         ID_ACTION_UPDATE
+        MENUITEM "Delete Unused\tF10",          IDC__BUTTON__DELETE_UNUSED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB__PREVIEW_IMAGE      BITMAP  DISCARDABLE     "res\\m0.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PALETTE
+//
+
+IDR_RCT2_PALETTE        PALETTE DISCARDABLE     "res\\rct2.pal"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_ABOUTBOX            "&About ParkDat..."
+    IDS__FORMAT__DAT_REPLACED 
+                            "Dat Slot: %d:\r\n\t""%s""\r\n\t\twas replaced with\r\n\t""%s""\r\n"
+    IDS__FORMAT__GET_DAT_NAME "%8s"
+    IDS__FORMAT__DAT_DELETED "Dat Slot: %d:\r\n\t""%s""\r\n\twas deleted\r\n"
+    IDS___FORMAT___DAT__HEADERS_UPDATED "Headers updated\r\n"
+    IDS__FORMAT__SV6_OPENING "Opening Sv6 File\r\n\t""%s""\r\n"
+    IDS__FORMAT__SV6_SAVING "Saving Sv6 File\r\n\t""%s""\r\n"
+    IDS__FORMAT__SV6_OPENED "\tDone\r\n"
+    IDS__FORMAT__SV6_SAVED  "\tDone\r\n"
+    IDS__BG_COLOR           "144 112 123"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ParkDat.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

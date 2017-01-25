@@ -1,0 +1,42 @@
+// ParkDat.odl : type library source for ParkDat.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ParkDat.tlb).
+
+[ uuid(09EEB79C-BEA5-44F1-94BC-550584EA0347), version(1.0) ]
+library ParkDat
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CParkDatDoc
+	
+	[ uuid(61F7709A-F31A-4B2B-BA08-043CC44553C7) ]
+	dispinterface IParkDat
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CParkDatDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CParkDatDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CParkDatDoc
+	
+	[ uuid(D6004899-7FD4-492D-9D5C-1DE19FDB9E8A) ]
+	coclass ParkDat
+	{
+		[default] dispinterface IParkDat;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

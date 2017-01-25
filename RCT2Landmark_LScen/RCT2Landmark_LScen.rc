@@ -1,0 +1,266 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RCT2Landmark_LScen.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RCT2Landmark_LScen.ico"
+IDI_ARROW               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RCT2LANDMARK_LSCEN_DIALOG DIALOGEX 0, 0, 370, 135
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "RCT2 Landmark Maker (Large Scenery) | (v1.3)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "RCT2 &Large Scenery File:",IDC_STATIC,15,10,85,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC__EDIT__LSCEN_DAT_NAME,105,10,120,12,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "...",IDC__BUTTON__LSCEN_DAT_NAME,232,10,20,12,0,
+                    WS_EX_STATICEDGE
+    RTEXT           "RCT2LMM &Project File:",IDC_STATIC,15,25,85,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC__EDIT__RCT2LMM_PROJECT_NAME,105,25,120,12,
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "...",IDC__BUTTON__RCT2LMM_PROJECT_NAME,232,25,20,12,0,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Output",IDC_STATIC,7,45,247,83
+    EDITTEXT        IDC_EDIT_OUTPUT,11,57,237,56,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Extract to Project",IDC__BUTTON__EXTRACT_TO_PROJECT,
+                    258,10,75,12,BS_CENTER | BS_VCENTER | BS_MULTILINE,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Extract &Full Views",IDC__BUTTON__EXTRACT_FULL_VIEWS,
+                    258,25,75,12,BS_CENTER | BS_VCENTER | BS_MULTILINE,
+                    WS_EX_RTLREADING
+    PUSHBUTTON      "Extract &Tile Images",IDC__BUTTON__EXTRACT_TILE_IMAGES,
+                    258,40,75,12,BS_CENTER | BS_VCENTER | BS_MULTILINE,
+                    WS_EX_RTLREADING
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,258,58,9,9
+    CONTROL         "Use ""Img#.bmp""?",IDC__CHECK__USE_IMG_NUM,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,271,56,75,12
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,271,70,9,9
+    LTEXT           "Start Img #:",IDC_STATIC,286,70,39,10
+    EDITTEXT        IDC_START_IMG_I,326,70,21,12,ES_AUTOHSCROLL
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,258,83,9,9
+    CONTROL         "Use ""col_row_rot.bmp""?",IDC__CHECK__USE_COL_ROW_ROT,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,270,82,
+                    90,12
+    PUSHBUTTON      "Test &Save DAT",IDC__BUTTON__TEST_SAVE_DAT,258,100,75,
+                    12,BS_CENTER | BS_VCENTER | BS_MULTILINE | NOT 
+                    WS_VISIBLE | WS_DISABLED,WS_EX_RTLREADING
+    PUSHBUTTON      "&Build DAT",IDC__BUTTON__BUILD_DAT,258,115,62,12,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE,WS_EX_RTLREADING
+    CONTROL         "Progress1",IDC_RCT2LMM_PROGRESS,"msctls_progress32",
+                    WS_BORDER,7,115,242,13
+END
+
+IDD_SV6_OBJ_FIXER_DIALOG DIALOGEX 0, 0, 274, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "sv6_obj_fixer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "RCT2 SV&6 file:",IDC_STATIC,10,10,55,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SV6NAME,70,10,130,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "...",IDC_BUTTON_SV6NAME,208,10,20,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "&Fix",IDC_BUTTON_WRITESV6FILE,234,10,23,11,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE,WS_EX_RTLREADING
+    LTEXT           "",IDC_MESSAGE,10,25,248,12,SS_CENTERIMAGE | SS_SUNKEN | 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RCT2Landmark_LScen MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RCT2Landmark_LScen\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RCT2Landmark_LScen.EXE\0"
+            VALUE "ProductName", "RCT2Landmark_LScen Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RCT2LANDMARK_LSCEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_SV6_OBJ_FIXER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PALETTE
+//
+
+IDR_PALETTE_RCT2        PALETTE DISCARDABLE     "res\\palette_rct2.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ARROW               BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_VLINE               BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RCT2Landmark_LScen.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

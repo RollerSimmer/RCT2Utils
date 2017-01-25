@@ -1,0 +1,9 @@
+EXPORTS 
+	WinWriteBytes
+	WinReadBytes
+	WinWrite
+	WinRead
+	WinOrB 
+	WinAndB 
+	WinXorB 
+

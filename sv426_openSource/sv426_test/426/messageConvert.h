@@ -1,0 +1,6 @@
+#ifndef MESSAGECONVERT_H
+#define MESSAGECONVERT_H
+
+
+#endif //MESSAGECONVERT_H
+

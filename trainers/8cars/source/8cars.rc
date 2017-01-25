@@ -1,0 +1,985 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_4CARS_ICON          ICON    DISCARDABLE     "4CARS.ico"
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Park"
+    BEGIN
+        MENUITEM "&Open\tF6",                   ID_PARK_OPEN
+        MENUITEM "&Close\tF7",                  ID_PARK_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Fi&x Park Status ",           ID_PARK_FIXPARKSTATUS
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Vandalize Park",              ID_PARK_VANDALIZEPARK
+        MENUITEM SEPARATOR
+        POPUP "Count Ob&jects"
+        BEGIN
+            MENUITEM "&Rides",                      ID_PARK_COUNTOBJECTS_RIDES
+
+            MENUITEM "&Map Data",                   ID_PARK_COUNTOBJECTS_MAPTILEOBJECTS
+
+            MENUITEM "&Sprites",                    ID_PARK_COUNTOBJECTS_SPRITES
+
+        END
+        MENUITEM "Optimi&ze Map Data Space",    ID_PARK_OPTIMIZEMAPDATASPACE
+        MENUITEM SEPARATOR
+        POPUP "&Invert Land Ownership"
+        BEGIN
+            MENUITEM "&Ignore Rights && For Sale  ", 
+                                                    ID_PARK_INVERTLANDOWNERSHIP_INGORERIGHTSFORSALE
+
+            MENUITEM "&All Types Inverted",         ID_PARK_INVERTLANDOWNERSHIP_INCLUDERIGHTSFORSALE
+
+        END
+        MENUITEM "&Set Unowned to Rights",      ID_PARK_SETUNOWNEDTORIGHTS
+        MENUITEM "O&wn All Land ",              ID_PARK_OWNALLLAND
+        MENUITEM "&De-own Border Land ",        ID_PARK_DEOWNBORDERLAND
+        POPUP "Border &Fence "
+        BEGIN
+            MENUITEM "&Remove",                     ID_PARK_BORDERFENCE_REMOVE
+
+            MENUITEM "&Restore",                    ID_PARK_BORDERFENCE_RESTORE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Change G&uest Entry Points",  ID_PARK_CHANGEGUESTENTRYPOINTS
+
+        MENUITEM SEPARATOR
+        POPUP "Increase Time (&+)"
+        BEGIN
+            MENUITEM "1 &Day\tShift+F1",            ID_PARK_INCREASETIME_1DAY
+
+            MENUITEM "1 &Month\tShift+F3",          ID_PARK_INCREASETIME_1MONTH
+
+            MENUITEM "1 &Year",                     ID_PARK_INCREASETIME_1YEAR
+
+        END
+        POPUP "Decrease Time (&-)"
+        BEGIN
+            MENUITEM "1 &Day\tShift+F2",            ID_PARK_DECREASETIME_1DAY
+
+            MENUITEM "1 &Month\tShift+F4",          ID_PARK_DECREASETIME_1MONTH
+
+            MENUITEM "1 &Year",                     ID_PARK_DECREASETIME_1YEAR
+
+        END
+        MENUITEM "&Reset Date",                 ID_PARK_RESETDATE
+        MENUITEM SEPARATOR
+        MENUITEM "Add Custom &Message",         ID_PARK_ADDCUSTOMMESSAGE
+        MENUITEM "C&lear All Messages",         ID_PARK_CLEARALLMESSAGES
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit Trainer",               ID_PARK_QUIT
+    END
+    POPUP "Mo&ney"
+    BEGIN
+        MENUITEM "&Use Money",                  ID_MONEY_USEMONEY
+        MENUITEM "&Don't Use Money",            ID_MONEY_DONTUSEMONEY
+        MENUITEM SEPARATOR
+        POPUP "&Add Cash"
+        BEGIN
+            MENUITEM "&5,000",                      ID_MONEY_ADD5000CASH
+            MENUITEM "5&0,000\tF8",                 ID_MONEY_ADD50000CASH
+            MENUITEM "500&,000",                    ID_MONEY_ADD500000CASH
+            MENUITEM "&5,000,000",                  ID_MONEY_ADD5000000CASH
+            MENUITEM SEPARATOR
+            MENUITEM "Custom...",                   ID_MONEY_ADDCASH_CUSTOM
+        END
+        POPUP "&Subtract Cash"
+        BEGIN
+            MENUITEM "&5,000",                      ID_MONEY_SUBTRACT5000CASH
+
+            MENUITEM "5&0,000\tF9",                 ID_MONEY_SUBTRACT50000CASH
+
+            MENUITEM "500&,000",                    ID_MONEY_SUBTRACT500000CASH
+
+            MENUITEM "&5,000,000",                  ID_MONEY_SUBTRACT5000000CASH
+
+        END
+    END
+    POPUP "&Weather"
+    BEGIN
+        MENUITEM "Make &Freezing",              ID_WEATHER_MAKEFREEZING
+        MENUITEM "Make &Cool",                  ID_WEATHER_MAKECOLD
+        MENUITEM "Make &Sunny\tShift+F11",      ID_WEATHER_MAKESUNNY
+        MENUITEM "Make &Hot",                   ID_WEATHER_MAKEHOT
+        MENUITEM "Start S&hower",               ID_WEATHER_STARTSHOWER
+        MENUITEM "Start &Heavy Rain ",          ID_WEATHER_STARTHEAVYRAIN
+        MENUITEM "Start &Thunderstorm ",        ID_WEATHER_STARTTHUNDERSTORM
+        MENUITEM SEPARATOR
+        MENUITEM "Free&ze Weather",             ID_WEATHER_FREEZEWEATHER
+        MENUITEM "&Cycle Weather",              ID_WEATHER_CYCLEWEATHER
+        , GRAYED
+    END
+    POPUP "&Landscape"
+    BEGIN
+        MENUITEM "&Load Terrain BMP",           ID_LANDSCAPE_LOADTERRAINBMP
+        MENUITEM "&Save Terrain BMP",           ID_LANDSCAPE_SAVETERRAINBMP
+        MENUITEM "Generate &Random Terrain",    ID_LANDSCAPE_GENERATERANDOMTERRAIN
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Cap land at max height ",     ID_LANDSCAPE_CAPLANDATMAXHEIGHT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Activate Mo&untain Tool\tCtrl+F1", 
+                                                ID_LANDSCAPE_ACTIVATEMOUNTAINTOOL
+
+        MENUITEM "Adjust Land &Mover Size",     ID_LANDSCAPE_ADJUSTLANDMOVERSIZE
+
+        MENUITEM "Fi&x Invisble Border",        ID_LANDSCAPE_FIXINVISBLEBORDER
+
+    END
+    POPUP "&Staff"
+    BEGIN
+        POPUP "&Advertising"
+        BEGIN
+            MENUITEM "Promote &Gentle Rides",       ID_STAFF_ADVERTISING_PROMOTEGENTLERIDES
+
+            MENUITEM "Promote &Thrill Rides",       ID_STAFF_ADVERTISING_PROMOTEINTENSERIDES
+
+            MENUITEM "Promote &All Rides",          ID_STAFF_ADVERTISING_PROMOTEALLRIDES
+
+        END
+        POPUP "&Banker"
+        BEGIN
+            MENUITEM "Give All Guests 100 &Cash",   ID_STAFF_BANKER_GIVEALLGUESTS100CASH
+
+            MENUITEM "Give All Guests 1,000 C&ash", ID_STAFF_BANKER_GIVEALLGUESTS1000CASH
+
+        END
+        POPUP "&Caterer"
+        BEGIN
+            MENUITEM "Give Guests &Drinks",         ID_STAFF_CATERER_GIVEGUESTSDRINKS
+
+            MENUITEM "Give Guests &Food",           ID_STAFF_CATERER_GIVEGUESTSBURGERS
+
+        END
+        POPUP "&Entertainer"
+        BEGIN
+            MENUITEM "Make Guests &Happy",          ID_STAFF_ENTERTAINER_MAKEGUESTSHAPPY
+
+            MENUITEM "Give Guests &Balloons",       ID_STAFF_ENTERTAINER_GIVEGUESTSBALLOONS
+
+        END
+        POPUP "&First Aid"
+        BEGIN
+            MENUITEM "&Heal Nausea",                ID_STAFF_FIRSTAID_HEALNAUSEA
+
+            MENUITEM "&Vitalize Guests",            ID_STAFF_FIRSTAID_VITALIZEGUESTS
+
+        END
+        POPUP "&Handyman"
+        BEGIN
+            MENUITEM "&Empty Trash",                ID_STAFF_HANDYMAN_EMPTYTRASH
+
+            MENUITEM "&Water Gardens\tShift+F10",   ID_STAFF_HANDYMAN_WATERGARDENS
+
+            POPUP "&Mow Grass"
+            BEGIN
+                MENUITEM """&Stripes""",                ID_STAFF_HANDYMAN_MOWGRASS
+
+                MENUITEM "&Plain\tShift+F8",            ID_STAFF_HANDYMAN_MOWGRASS_PLAIN
+
+            END
+            MENUITEM "&Clean Paths",                ID_STAFF_HANDYMAN_CLEANPATHS
+
+            MENUITEM "&Repair Vandalism\tShift+F9", ID_STAFF_HANDYMAN_FIXVANDALISM
+
+        END
+        POPUP "&Mechanic"
+        BEGIN
+            MENUITEM "&Renew Rides\tShift+F12",     ID_STAFF_MECHANIC_RENEWRIDES
+
+            MENUITEM "R&epair Rides",               ID_STAFF_MECHANIC_REPAIRRIDES
+            , GRAYED
+            MENUITEM "Make Rides Re&liable",        ID_STAFF_MECHANIC_MAKERIDESRELIABLE
+
+        END
+        POPUP "&Park Guide"
+        BEGIN
+            MENUITEM "Guide Guests to &Restrooms",  ID_STAFF_PARKGUIDE_HELPGUESTSFINDRESTROOMS
+
+            MENUITEM "Hand Out Park &Maps",         ID_STAFF_PARKGUIDE_HANDOUTPARKMAPS
+
+            MENUITEM "Give Guests &Umbrellas",      ID_STAFF_PARKGUIDE_GIVEGUESTSUMBRELLAS
+
+        END
+        POPUP "&Researcher", GRAYED
+        BEGIN
+            MENUITEM "&Complete Research",          ID_STAFF_RESEARCHER_COMPLETERESEARCH
+
+        END
+        POPUP "&Security"
+        BEGIN
+            MENUITEM "&Pacify Vandals",             ID_STAFF_SECURITY_PACIFYVANDALS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Sta&ff Speed"
+        BEGIN
+            MENUITEM "&Fast",                       ID_STAFF_STAFFSPEED_FAST
+            MENUITEM "&Normal",                     ID_STAFF_STAFFSPEED_NORMAL
+
+            MENUITEM "&Slow",                       ID_STAFF_STAFFSPEED_SLOW
+            MENUITEM "Free&ze",                     ID_STAFF_STAFFSPEED_FREEZE
+
+        END
+        MENUITEM "F&ire All",                   ID_STAFF_FIREALL, GRAYED
+        MENUITEM "E&dit Staff",                 ID_STAFF_EDITSTAFF
+    END
+    POPUP "&Rides"
+    BEGIN
+        MENUITEM "&Edit Rides\tF10",            ID_RIDES_EDITRIDESTATS
+        MENUITEM SEPARATOR
+        MENUITEM "&10 Minute Inspections ",     ID_RIDES_10MINUTEINSPECTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Uniform Item Pricing ",      ID_RIDES_UNIFORMITEMPRICING
+        MENUITEM SEPARATOR
+        MENUITEM "Any &Height Construction",    ID_RIDES_ANYHEIGHTCONSTRUCTION
+
+        MENUITEM "1&0-foot shops",              ID_RIDES_10FOOTSHOPS
+        MENUITEM "&8 Cars per Train",           ID_RIDES_8CARSPERTRAIN
+        MENUITEM SEPARATOR
+        MENUITEM "Ultra-&Exciting Rides",       ID_RIDES_ULTRAEXCITINGRIDES
+        MENUITEM "Ultra-&Intense Rides",        ID_RIDES_ULTRAINTENSERIDES
+        MENUITEM "Ultra-&Nauseating Rides",     ID_RIDES_ULTRANAUSEATINGRIDES
+
+    END
+    POPUP "&Guests"
+    BEGIN
+        MENUITEM "&Edit Guest Stats",           ID_GUESTS_EDITGUESTSTATS
+        , GRAYED
+        MENUITEM "Peeps in &Uniform",           ID_GUESTS_UNIFORMPEEPS
+        MENUITEM SEPARATOR
+        POPUP "&Trams"
+        BEGIN
+            MENUITEM "&Small Tram",                 ID_GUESTS_TRAMS_SMALLTRAM
+
+            MENUITEM "&Medium Tram",                ID_GUESTS_TRAMS_MEDIUMTRAM
+
+            MENUITEM "&Large Tram\tF12",            ID_GUESTS_TRAMS_LARGETRAM
+
+            MENUITEM "&Huge Tram",                  ID_GUESTS_TRAMS_HUGETRAM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Remove All Guests",          ID_GUESTS_REMOVEALLGUESTS
+        MENUITEM "Reset Guest &Numbers",        ID_GUESTS_RESETGUESTNUMBERS
+        , MENUBREAK
+        MENUITEM SEPARATOR
+        MENUITEM "&All-Around Guests",          ID_GUESTS_ALLAROUNDGUESTS
+        MENUITEM "Free&ze Guest Movement",      ID_GUESTS_FREEZEGUESTMOVEMENT
+        , GRAYED
+    END
+    POPUP "&Debug"
+    BEGIN
+        MENUITEM "&Sort Map Elements Internally", 
+                                                ID_MISC_SORTMAPELEMENTSINTERNALLY
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Eliminate Duplicate Suface Data ", 
+                                                ID_DEBUG_ELIMINATEDUPLICATESUFACEDATA
+
+    END
+    POPUP "&Misc."
+    BEGIN
+        MENUITEM "Remove F&loating Objects",    ID_MISC_REMOVEFLOATINGOBJECTS
+
+        MENUITEM SEPARATOR
+        POPUP "&Zero all Clearances"
+        BEGIN
+            MENUITEM "&Absolute\tShift+F5",         ID_MISC_ZEROALLCLEARANCES_ABSOLUTE
+
+            MENUITEM "&Relative\tShift+F6",         ID_MISC_ZEROALLCLEARANCES_RELATIVE
+
+        END
+        MENUITEM "&Restore Clearances\tShift+F7", ID_MISC_RESTORECLEARANCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Map Object Manipulation\tF11", 
+                                                ID_MISC_MAPOBJECTMANIPULATION
+
+    END
+    POPUP "&Help", HELP
+    BEGIN
+        MENUITEM "&Contents",                   ID_HELP_CONTENTS
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,3,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "8 Cars Per Trainer\0"
+            VALUE "FileVersion", "1.33\0"
+            VALUE "InternalName", "8cars\0"
+            VALUE "LegalCopyright", "Copyright 2006, Parkitect\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "8cars133.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", "0, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSERTCUSTOMMESSAGE DIALOG DISCARDABLE  0, 0, 192, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert Custom Message "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Message:",IDC_STATIC,5,10,31,8
+    EDITTEXT        IDC_CUSTMSGEDIT,45,12,140,12,ES_AUTOHSCROLL
+    LTEXT           "Co&lor:",IDC_STATIC,5,30,20,8
+    COMBOBOX        IDC_COLORCOMBO,45,30,46,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Icon:",IDC_STATIC,95,30,20,8
+    COMBOBOX        IDC_ICONCOMBO,134,30,50,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,5,50,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,60,50,50,14
+END
+
+IDD_TERRAINTOOLSIZE DIALOGEX 0, 0, 113, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Terrain Tool Size"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RTEXT           "Land Tool &Size:",IDC_STATIC,0,0,50,12
+    EDITTEXT        IDC_SIZEEDIT,56,0,20,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    PUSHBUTTON      "-",IDC_BUTTONMINUS,81,0,12,12
+    PUSHBUTTON      "+",IDC_BUTTONPLUS,96,0,12,12
+    PUSHBUTTON      "&Mountain Tool",IDC_MOUNTAINTOOLBTN,0,18,108,15,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "&OK",IDOK,3,35,27,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,35,35,36,15
+    PUSHBUTTON      "&Apply",IDAPPLY,77,35,31,15
+END
+
+IDD_GUESTENTRYPOINTS DIALOG DISCARDABLE  0, 0, 115, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Guest Entry Points"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "&X",IDC_STATIC,56,5,18,9
+    CTEXT           "&Y",IDC_STATIC,74,5,18,9
+    CTEXT           "&Z",IDC_STATIC,91,4,18,9
+    RTEXT           "Entry Point #&1",IDC_STATIC,0,17,50,12
+    EDITTEXT        IDC_XEDIT,56,17,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_YEDIT,74,17,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_ZEDIT,91,17,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    RTEXT           "Entry Point #2",IDC_STATIC,0,32,50,12
+    EDITTEXT        IDC_XEDIT2,56,32,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_YEDIT2,74,32,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_ZEDIT2,91,32,18,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    RTEXT           "&Direction #1",IDC_STATIC,0,45,50,12
+    COMBOBOX        IDC_DIRECTION,55,45,50,65,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Direction #2",IDC_STATIC,0,59,50,12
+    COMBOBOX        IDC_DIRECTION2,55,59,50,65,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,2,78,27,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,33,78,36,15
+    PUSHBUTTON      "&Apply",IDAPPLY,75,78,31,15
+END
+
+IDD_MAINDLG DIALOGEX 0, 0, 280, 0
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Dialog"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_RANDOMTERRAIN DIALOG DISCARDABLE  0, 0, 222, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Random Terrain Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&Average Height:",IDC_STATIC,5,8,65,16
+    CONTROL         "Slider1",IDC_AVGHEIGHTBAR,"msctls_trackbar32",
+                    WS_TABSTOP,75,5,115,17
+    EDITTEXT        IDC_AVGHEIGHTEDIT,195,5,25,15,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    RTEXT           "&Incline:",IDC_STATIC,5,28,65,16
+    CONTROL         "Slider1",IDC_INCLINEBAR,"msctls_trackbar32",WS_TABSTOP,
+                    75,25,115,17
+    EDITTEXT        IDC_INCLINEEDIT,195,25,25,15,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED | WS_GROUP
+    RTEXT           "&Variation:",IDC_STATIC,1,48,65,12
+    CONTROL         "Slider1",IDC_VARIATIONBAR,"msctls_trackbar32",
+                    WS_TABSTOP,75,45,115,17
+    EDITTEXT        IDC_VARIATIONEDIT,195,45,25,15,ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED
+    PUSHBUTTON      "&Generate Terrain",IDOK,5,75,70,15
+    DEFPUSHBUTTON   "Generate and &Continue",IDAPPLY,80,75,79,15
+    PUSHBUTTON      "&Cancel",IDCANCEL,165,75,50,15
+END
+
+IDD_RIDESMENU DIALOGEX 0, 0, 370, 202
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_NOFAILCREATE | WS_POPUP | 
+    WS_CAPTION | WS_VSCROLL | WS_HSCROLL | WS_SYSMENU
+CAPTION "Rides Menu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Ride #:",IDC_STATIC,0,9,24,8
+    COMBOBOX        IDC_RIDESELECT,31,7,110,94,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "&Actions",IDC_STATIC,12,26,58,136
+    CONTROL         "Fi&x Breakdown",IDC_FIXBREAKDOWN_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_DISABLED | WS_TABSTOP,18,39,50,18
+    CONTROL         "Rene&w",IDC_RENEW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_TOP | BS_MULTILINE | WS_TABSTOP,18,61,50,10
+    CONTROL         "Make Re&liable ",IDC_MAKERELIABLE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,18,73,50,18
+    GROUPBOX        "Special Actions",IDC_STATIC,73,27,68,135
+    CONTROL         "Raise/ Lower",IDC_RAISELOWER_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,78,37,50,18
+    CONTROL         "Bur&y",IDC_BURY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_TOP | BS_MULTILINE | WS_TABSTOP,78,58,50,10
+    CONTROL         "Exca&vate",IDC_EXCAVATE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_TOP | BS_MULTILINE | WS_TABSTOP,78,72,50,10
+    CONTROL         "&Zero Clearance",IDC_ZEROCLEARANCE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,78,86,50,18
+    CONTROL         "Make Invisible (permanent)",IDC__TOGGLE_VISIBLE__CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,78,105,50,26
+    CONTROL         "Toggle &Chain",IDC__TOGGLE_CHAIN__CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_TOP | BS_MULTILINE | 
+                    WS_TABSTOP,78,138,50,18
+    GROUPBOX        "Ride Name:",IDC_STATIC,145,0,205,25
+    LTEXT           "<No ride selected>",IDC_RIDENAME,154,10,189,8
+    GROUPBOX        "Opt&ions",IDC_STATIC,143,29,205,141
+    LTEXT           "&Track Type:",IDC_STATIC,148,42,41,12
+    COMBOBOX        IDC_TRACKTYPE,195,42,145,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Trai&n Type:",IDC_STATIC,148,56,41,12
+    COMBOBOX        IDC_TRAINTYPE,195,56,145,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Op&erating Mode:",IDC_STATIC,148,70,41,17
+    COMBOBOX        IDC_OPERMODE,195,71,145,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Color Sche&me (for special actions):",IDC_STATIC,148,90,
+                    60,16,0,WS_EX_RIGHT
+    COMBOBOX        IDC_COLORSCHEME,220,87,121,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Height Offset (for Raise/Lower):",IDC_STATIC,148,111,
+                    141,10,0,WS_EX_RIGHT
+    EDITTEXT        IDC_RAISELOWEROFFSET,295,111,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_RAISELOWEROFFSET_PLUS,317,112,10,10
+    PUSHBUTTON      "-",IDC_RAISELOWEROFFSET_MINUS,329,112,10,10
+    LTEXT           "Launch &Speed:",IDC_STATIC,150,123,50,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_LAUNCHSPEED,202,123,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_LAUNCHSPEED_PLUS,224,124,10,10
+    PUSHBUTTON      "-",IDC_LAUNCHSPEED_MINUS,236,124,10,10
+    LTEXT           "# Circ&uits:",IDC_STATIC,252,124,40,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_CIRCUITS,295,123,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_CIRCUITS_PLUS,317,124,10,10
+    PUSHBUTTON      "-",IDC_CIRCUITS_MINUS,329,124,10,10
+    LTEXT           "Li&ft Speed:",IDC_STATIC,150,136,47,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_LIFTSPEED,202,135,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_LIFTSPEED_PLUS,224,136,10,10
+    PUSHBUTTON      "-",IDC_LIFTSPEED_MINUS,236,136,10,10
+    LTEXT           "A&ge (years):",IDC_STATIC,251,135,40,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_RIDEAGE,295,135,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_RIDEAGE_PLUS,317,135,10,10
+    PUSHBUTTON      "-",IDC_RIDEAGE_MINUS,329,136,10,10
+    LTEXT           "&# Trains",IDC_STATIC,150,149,47,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_NUMTRAINS,202,148,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_NUMTRAINS_PLUS,224,149,10,10
+    PUSHBUTTON      "-",IDC_NUMTRAINS_MINUS,236,149,10,10
+    LTEXT           "# Cars:",IDC_STATIC,251,148,40,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_NUMCARS,295,147,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_NUMCARS_PLUS,317,148,10,10
+    PUSHBUTTON      "-",IDC_NUMCARS_MINUS,329,148,10,10
+    GROUPBOX        "",IDC_STATIC,14,163,128,23
+    DEFPUSHBUTTON   "&OK",IDOK,18,170,33,12
+    PUSHBUTTON      "A&pply",ID_APPLY,54,170,35,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,94,170,35,12
+END
+
+IDD_MAPOBJECTMANIPULATION DIALOG DISCARDABLE  0, 0, 272, 215
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_NOFAILCREATE | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Map Object Manipulation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Raise/Lower",IDC_CHECK_ACTION_RAISELOWER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,10,63,8
+    CONTROL         "&Remove",IDC_CHECK_ACTION_REMOVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,10,63,8
+    CONTROL         "Change &Land Type",IDC__CHECK__ACTION__CHANGE_LAND_TYPE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,138,9,82,8
+    GROUPBOX        "&Raise/Lower Param",IDC_STATIC,0,19,114,24
+    LTEXT           "&Height Offset:",IDC_STATIC,7,30,50,8
+    EDITTEXT        IDC_RAISELOWER_HEIGHTOFFSET_EDIT,67,27,19,12,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_RAISELOWER_HEIGHTOFFSET_PLUS,89,28,10,10
+    PUSHBUTTON      "-",IDC_RAISELOWER_HEIGHTOFFSET_MINUS,101,28,10,10
+    GROUPBOX        "&Change Land Param",IDC_STATIC,122,19,137,24
+    LTEXT           "Ne&w Land Type:",IDC_STATIC,129,30,56,8
+    COMBOBOX        IDC__DROP_LIST__NEW_LAND_TYPE,186,28,69,163,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Object Type:",IDC_STATIC,0,44,239,45
+    CONTROL         "&Ride Track",IDC_CHECK_RIDETRACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,56,63,8
+    CONTROL         "&Small scenery ",IDC_CHECK_SMALLSCENERY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,66,63,8
+    CONTROL         "&Large scenery",IDC_CHECK_LARGESCENERY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,76,63,8
+    CONTROL         "&Walls",IDC_CHECK_WALLS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,56,63,8
+    CONTROL         "&Path banner",IDC_CHECK_PATHBANNER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,66,63,8
+    CONTROL         "Par&k entrance ",IDC_CHECK_PARKENTRANCE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,76,63,8
+    CONTROL         "Wa&ter",IDC_CHECK_WATER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,56,63,8
+    CONTROL         "La&nd",IDC_CHECK_LAND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,66,63,8
+    CONTROL         "Pat&h",IDC_CHECK_PATH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,76,34,8
+    CONTROL         """Null"" items",IDC__CHECK__NULL_ITEMS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,182,75,51,12
+    GROUPBOX        "On &Land Type:",IDC_STATIC,0,90,122,84
+    CONTROL         "R&ed clay",IDC_CHECK_REDCLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,100,45,8
+    CONTROL         "Tan &dirt",IDC_CHECK_TANDIRT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,110,45,8
+    CONTROL         "Brown d&irt",IDC_CHECK_BROWNDIRT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,120,45,8
+    CONTROL         "Grass&/dirt",IDC_CHECK_GRASSDIRT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,130,45,8
+    CONTROL         "&Grass",IDC_CHECK_GRASS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,140,45,8
+    CONTROL         "Roc&k",IDC_CHECK_ROCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,150,45,8
+    CONTROL         "San&d",IDC_CHECK_SAND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,160,45,8
+    CONTROL         "R&ed rock",IDC_CHECK_REDROCK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,100,45,8
+    CONTROL         "C&hecker",IDC_CHECK_CHECKER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,110,45,8
+    CONTROL         "Sno&w",IDC_CHECK_SNOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,119,45,8
+    CONTROL         "Red &grid",IDC_CHECK_REDGRID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,130,45,8
+    CONTROL         "Yellow grid",IDC_CHECK_YELLOWGRID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,140,46,8
+    CONTROL         "Purple grid",IDC_CHECK_PURPLEGRID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,150,46,8
+    CONTROL         "Green grid",IDC_CHECK_GREENGRID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,160,46,8
+    GROUPBOX        "On &Edge Type:",IDC_STATIC,128,90,80,50
+    CONTROL         "&Dirt",IDC_CHECK_SIDE_DIRT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,100,63,8
+    CONTROL         "Bro&wn wood",IDC_CHECK_SIDE_BROWNWOOD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,134,110,63,8
+    CONTROL         "B&lack wood",IDC_CHECK_SIDE_BLACKWOOD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,134,120,53,10
+    CONTROL         "I&ce",IDC_CHECK_SIDE_ICE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,130,63,8
+    GROUPBOX        "&Height Range",IDC_STATIC,128,140,80,34
+    LTEXT           "&Low",IDC_STATIC,136,149,20,12
+    LTEXT           "&High",IDC_STATIC,136,161,20,12
+    EDITTEXT        IDC_HEIGHTRANGE_LOW_EDIT,158,148,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHTRANGE_HIGH_EDIT,158,160,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_HEIGHTRANGE_LOW_PLUS,180,149,10,10
+    PUSHBUTTON      "+",IDC_HEIGHTRANGE_HIGH_PLUS,180,161,10,10
+    PUSHBUTTON      "-",IDC_HEIGHTRANGE_LOW_MINUS,192,149,10,10
+    PUSHBUTTON      "-",IDC_HEIGHTRANGE_HIGH_MINUS,192,161,10,10
+    GROUPBOX        "",IDC_STATIC,3,172,204,26
+    CTEXT           "NOTE: ALWAYS SAVE BEFORE USING THESE FUNCTIONS, AS THERE IS NO UNDO.",
+                    IDC_STATIC,5,178,201,17
+    DEFPUSHBUTTON   "&OK",IDOK,2,200,50,14
+    PUSHBUTTON      "&Apply",IDAPPLY,52,200,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,102,200,50,14
+    GROUPBOX        "&Action",IDC_STATIC,0,0,239,20
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_TEXTDIALOG DIALOG DISCARDABLE  0, 0, 186, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Prompt",IDC_PROMPT,12,6,162,26
+    EDITTEXT        IDC_TEXT,5,34,175,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,5,51,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,51,50,14
+END
+
+IDD_UNIFORMPEEPS DIALOG DISCARDABLE  0, 0, 101, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uniform Peeps"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Shirt Color:",IDC_STATIC,3,3,40,12
+    COMBOBOX        IDC_SHIRTCOLOR,52,3,49,127,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Pants Color:",IDC_STATIC,3,19,40,12
+    COMBOBOX        IDC_PANTSCOLOR,51,19,49,127,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Override Purchases",IDC_OVERRIDEPURCHASECHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,35,78,10
+    PUSHBUTTON      "OK",IDOK,3,50,30,12
+    PUSHBUTTON      "Apply",IDAPPLY,36,50,30,12
+    PUSHBUTTON      "Cancel",IDCANCEL,68,50,30,12
+END
+
+IDD_STAFFMENU DIALOG DISCARDABLE  0, 0, 156, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_HSCROLL | 
+    WS_SYSMENU
+CAPTION "Staff Menu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Staff #:",IDC_STATIC,2,9,24,8
+    COMBOBOX        IDC_STAFFSELECT,47,7,95,94,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Staff type:",IDC_STATIC,2,25,39,8
+    COMBOBOX        IDC_STAFFTYPESELECT,47,22,95,94,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,1,33,140,23
+    DEFPUSHBUTTON   "&OK",IDOK,5,40,33,12
+    PUSHBUTTON      "A&pply",ID_APPLY,41,40,35,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,81,40,35,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INSERTCUSTOMMESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_TERRAINTOOLSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 106
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GUESTENTRYPOINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+    END
+
+    IDD_RANDOMTERRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_RIDESMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_MAPOBJECTMANIPULATION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 270
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_UNIFORMPEEPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 94
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_STAFFMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INSERTCUSTOMMESSAGE DLGINIT
+BEGIN
+    IDC_COLORCOMBO, 0x403, 6, 0
+0x7267, 0x6565, 0x006e, 
+    IDC_COLORCOMBO, 0x403, 4, 0
+0x6572, 0x0064, 
+    IDC_COLORCOMBO, 0x403, 5, 0
+0x6c62, 0x6575, "\000" 
+    IDC_ICONCOMBO, 0x403, 6, 0
+0x6f63, 0x6e69, 0x0073, 
+    IDC_ICONCOMBO, 0x403, 15, 0
+0x6570, 0x7372, 0x6e6f, 0x7720, 0x6c61, 0x696b, 0x676e, "\000" 
+    IDC_ICONCOMBO, 0x403, 16, 0
+0x7243, 0x776f, 0x2064, 0x666f, 0x7020, 0x6f65, 0x6c70, 0x0065, 
+    IDC_ICONCOMBO, 0x403, 6, 0
+0x7741, 0x7261, 0x0064, 
+    IDC_ICONCOMBO, 0x403, 6, 0
+0x7247, 0x7061, 0x0068, 
+    IDC_ICONCOMBO, 0x403, 6, 0
+0x6972, 0x6564, 0x0020, 
+    0
+END
+
+IDD_GUESTENTRYPOINTS DLGINIT
+BEGIN
+    IDC_DIRECTION, 0x403, 5, 0
+0x6145, 0x7473, "\000" 
+    IDC_DIRECTION, 0x403, 6, 0
+0x6f53, 0x7475, 0x0068, 
+    IDC_DIRECTION, 0x403, 5, 0
+0x6557, 0x7473, "\000" 
+    IDC_DIRECTION, 0x403, 6, 0
+0x6f4e, 0x7472, 0x0068, 
+    IDC_DIRECTION2, 0x403, 5, 0
+0x6145, 0x7473, "\000" 
+    IDC_DIRECTION2, 0x403, 6, 0
+0x6f53, 0x7475, 0x0068, 
+    IDC_DIRECTION2, 0x403, 5, 0
+0x6557, 0x7473, "\000" 
+    IDC_DIRECTION2, 0x403, 6, 0
+0x6f4e, 0x7472, 0x0068, 
+    0
+END
+
+IDD_RIDESMENU DLGINIT
+BEGIN
+    IDC_RIDESELECT, 0x403, 16, 0
+0x6f52, 0x6c6c, 0x7265, 0x4320, 0x616f, 0x7473, 0x7265, 0x0020, 
+    IDC_TRACKTYPE, 0x403, 2, 0
+0x0031, 
+    IDC_TRACKTYPE, 0x403, 2, 0
+0x0032, 
+    IDC_TRAINTYPE, 0x403, 2, 0
+0x0031, 
+    IDC_TRAINTYPE, 0x403, 2, 0
+0x0032, 
+    IDC_OPERMODE, 0x403, 6, 0
+0x6f48, 0x656e, 0x0079, 
+    IDC_COLORSCHEME, 0x403, 6, 0
+0x6f48, 0x656e, 0x0079, 
+    0
+END
+
+IDD_STAFFMENU DLGINIT
+BEGIN
+    IDC_STAFFSELECT, 0x403, 16, 0
+0x6f52, 0x6c6c, 0x7265, 0x4320, 0x616f, 0x7473, 0x7265, 0x0020, 
+    IDC_STAFFTYPESELECT, 0x403, 16, 0
+0x6f52, 0x6c6c, 0x7265, 0x4320, 0x616f, 0x7473, 0x7265, 0x0020, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_F1,          ID_LANDSCAPE_ACTIVATEMOUNTAINTOOL, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    VK_F1,          ID_PARK_INCREASETIME_1DAY, VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_RIDES_EDITRIDESTATS, VIRTKEY, NOINVERT
+    VK_F10,         ID_STAFF_HANDYMAN_WATERGARDENS, VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         ID_MISC_MAPOBJECTMANIPULATION, VIRTKEY, NOINVERT
+    VK_F11,         ID_WEATHER_MAKESUNNY,   VIRTKEY, SHIFT, NOINVERT
+    VK_F12,         ID_GUESTS_TRAMS_LARGETRAM, VIRTKEY, NOINVERT
+    VK_F12,         ID_STAFF_MECHANIC_RENEWRIDES, VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_PARK_DECREASETIME_1DAY, VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_PARK_INCREASETIME_1MONTH, VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_PARK_DECREASETIME_1MONTH, VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_MISC_ZEROALLCLEARANCES_ABSOLUTE, VIRTKEY, SHIFT, 
+                                                    NOINVERT
+    VK_F6,          ID_PARK_OPEN,           VIRTKEY, NOINVERT
+    VK_F6,          ID_MISC_ZEROALLCLEARANCES_RELATIVE, VIRTKEY, SHIFT, 
+                                                    NOINVERT
+    VK_F7,          ID_PARK_CLOSE,          VIRTKEY, NOINVERT
+    VK_F7,          ID_MISC_RESTORECLEARANCES, VIRTKEY, SHIFT, NOINVERT
+    VK_F8,          ID_MONEY_ADD5000CASH,   VIRTKEY, NOINVERT
+    VK_F8,          ID_STAFF_HANDYMAN_MOWGRASS_PLAIN, VIRTKEY, SHIFT, 
+                                                    NOINVERT
+    VK_F9,          ID_MONEY_SUBTRACT5000CASH, VIRTKEY, NOINVERT
+    VK_F9,          ID_STAFF_HANDYMAN_FIXVANDALISM, VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "dlg\\peep color\\colorpalette.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RIDES_ANYHEIGHTCONSTRUCTION "Build at any height"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

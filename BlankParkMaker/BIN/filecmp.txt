@@ -1,0 +1,13 @@
+File Comparer - Compares two files and outputs the locations of 
+differences between them
+
+Usage:
+
+filecmp outputfile cmpfile1 cmpfile2 baseoutaddr
+
+- outputfile	name of file to output results to
+- cmpfile1	name of 1st file to compare
+- cmpfile2	name of 2nd file to compare
+- baseoutaddr	output address offset for dump;  This will
+		be the base addresss of addresses listed in the
+		output file

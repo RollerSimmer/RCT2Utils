@@ -1,0 +1,7 @@
+Differences between 
+	in_spriteStats.bin 
+and 
+	out_spriteStats.bin 
+----------------------------------------------
+Address		Length of span	File 1	File 2
+----------------------------------------------
